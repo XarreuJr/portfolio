@@ -1,368 +1,249 @@
-<!-- HELLO
--
-DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
-Created by Anil Seervi.
--
-GitHub repo: https://github.com/AnilSeervi/DevFolio
-README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
--
-Have fun creating your portfolio on this template!!! -->
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <!-- Title: add your Portfolio websites's title here -->
-    <title>[Your name here] | Developer</title>
+  <!-- ===== SEO ===== -->
+  <title>Diogo Vidazinha | Developer</title>
+  <meta name="keywords" content="Diogo Vidazinha, diogovidazinha, Python, AI, Artificial Intelligence, Cybersecurity, Java, SQL, Power BI, IPBeja, SOMINCOR, Vilnius Tech, Erasmus"/>
+  <meta name="description" content="Portfólio de Diogo Vidazinha — IT Engineering, Python & IA, estágio na SOMINCOR, experiência internacional Erasmus (Vilnius Tech)."/>
+  <link rel="icon" type="image/png" href="./assets/devfolio-logo.png"/>
+  <meta name="theme-color" content="#0ea5e9"/>
 
-    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://<o_teu_utilizador>.github.io/diogo-portfolio/"/>
+  <meta property="og:title" content="Diogo Vidazinha | Developer"/>
+  <meta property="og:description" content="IT Engineering • Python & AI • Erasmus @ Vilnius Tech • Internship @ SOMINCOR"/>
+  <meta property="og:image" content="./assets/diogo.png"/>
 
-    <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image"/>
+  <meta property="twitter:url" content="https://<o_teu_utilizador>.github.io/diogo-portfolio/"/>
+  <meta property="twitter:title" content="Diogo Vidazinha | Developer"/>
+  <meta property="twitter:description" content="IT Engineering • Python & AI • Erasmus @ Vilnius Tech • Internship @ SOMINCOR"/>
+  <meta property="twitter:image" content="./assets/diogo.png"/>
 
-    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
-    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+  <link rel="preload" as="style" href="./css/main.css"/>
+  <link rel="stylesheet" href="./css/main.css"/>
 
-    <!-- Add your primary-theme color for the value of content -->
-    <meta name="theme-color" content="#36d1dc" />
+  <!-- FontAwesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <!-- Fill content with the URL of this portfolio you'll host -->
-    <meta property="og:url" content="https://devfolio.js.org/" />
-    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
-    <meta property="og:title" content="[Your name here] | Developer" />
-    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
-    <meta property="og:description" content="Made using DevFolio Template" />
-    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
-      so that a thumbnail image of your portfolio is shown while shared on other platform -->
-    <meta
-      property="og:image"
-      content="https://devfolio.js.org/assets/devfolio.png"
-    />
+  <script defer src="./javascript/scrollreveal.min.js"></script>
+  <script defer type="text/javascript" src="./javascript/scrollveal.js"></script>
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <!-- Again fill content attr with the URL of this portfolio you'll host -->
-    <meta property="twitter:url" content="https://devfolio.js.org" />
-    <!-- Recommended to use the same text used within <title> element -->
-    <meta property="twitter:title" content="[Your name here] | Developer" />
-    <!-- short description that shows up while your portfolio is shared -->
-    <meta
-      property="twitter:description"
-      content="Made using DevFolio Template"
-    />
-    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
-    <meta
-      property="twitter:image"
-      content="https://anilseervi.vercel.app/assets/devfolio.png"
-    />
+  <!-- Removed Google Analytics from the template -->
+</head>
 
-    <!-- link tags -->
-    <link rel="preload" as="style" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+<body>
+  <!-- ================= Hero Section ================= -->
+  <div id="hero">
+    <section class="container">
+      <h1 class="hero-title">
+        Hi, my name is <span class="text-color-main name">Diogo Vidazinha</span><br/>
+        I build value with Python, AI and clear, human-focused technology.
+      </h1>
+      <p class="hero-cta">
+        <a class="cta-btn cta-btn--hero" href="#about">Get to know me</a>
+      </p>
+    </section>
+    <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+      <div class="scroll-down"></div>
+    </a>
+  </div>
+  <!-- /END Hero Section -->
 
-    <!-- FontAwesome Icons link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script defer src="./javascript/scrollreveal.min.js"></script>
-    <script
-      defer
-      type="text/javascript"
-      src="./javascript/scrollveal.js"
-    ></script>
-
-    <!-- Remove Google Analytics once you have your portfolio website set-up -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag("js", new Date())
-
-      gtag("config", "UA-122228201-4")
-    </script>
-    <!-- End of Google Analytics -->
-  </head>
-  <body>
-    <!-- Hero Section -->
-    <div id="hero">
-      <section class="container">
-        <h1 class="hero-title">
-          Hi, my name is <span class="text-color-main name">Your Name</span>
-          <br />
-          I'm the Unknown Developer.
-        </h1>
-        <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+  <!-- ================= About Section ================= -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="row about-wrapper">
+      <div class="about-wrapper__image">
+        <img class="img-fluid" src="./assets/diogo.png" alt="Diogo Vidazinha" width="450" height="450"/>
+      </div>
+      <div class="about-wrapper__info">
+        <p class="about-wrapper__info-text">
+          Final-year IT Engineering student @ IPBeja. I solve real problems with <strong>Python</strong> & <strong>AI</strong>, 
+          combining academic projects with hands-on work in systems, cybersecurity and networking.
         </p>
-      </section>
-      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
-        <div class="scroll-down"></div
-      ></a>
+        <p class="about-wrapper__info-text">
+          Internship @ <strong>Boliden SOMINCOR</strong> (AD, VMware, Veeam, SCCM, PowerShell) — including work <strong>1,000+ m underground</strong>.  
+          Erasmus @ <strong>Vilnius Tech</strong> (LT), which boosted adaptability and international teamwork.  
+          5+ years in customer service. I enjoy sports, reading, and <strong>enduro / restoring motorcycles</strong>.
+        </p>
+        <span class="about-wrapper__cta">
+          <a href="./assets/Diogo_Vidazinha_CV.pdf" class="cta-btn cta-btn--resume" target="_blank" rel="noopener">View Resume</a>
+        </span>
+      </div>
     </div>
-    <!-- /END Hero Section -->
+  </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="row about-wrapper">
-          <div class="about-wrapper__image">
-            <img
-              class="img-fluid"
-              src="./assets/profile.png"
-              alt="Profile Image"
-              width="450"
-              height="350"
-            />
-          </div>
-          <div class="about-wrapper__info">
-            <p class="about-wrapper__info-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus quae repellat, ad omnis distinctio velit saepe expedita
-              architecto cumque veritatis adipisci. Sapiente non, saepe hic
-              adipisci doloribus quisquam recusandae et.
-            </p>
-            <p class="about-wrapper__info-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-              obcaecati doloribus qui praesentium quae veniam esse mollitia
-              consequuntur nisi minima quasi et fugit quidem enim recusandae
-              delectus, iusto culpa rerum?
-            </p>
-            <span class="about-wrapper__cta">
-              <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
-            </span>
-          </div>
-        </div>
+<!-- ================= Skills Section ================= -->
+<section id="skills" class="skills">
+  <div class="container">
+    <h2 class="section-title dark-blue-text">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-card__icon"><i class="fa-brands fa-python"></i></div>
+        <h3 class="skill-card__title">Tech Stack</h3>
+        <p class="skill-card__desc">Python (data/AI), Java (JavaFX, JDBC/Hibernate), C++, SQL, Power BI.</p>
+        <ul class="skill-chips"><li>Python</li><li>AI/ML</li><li>Java</li><li>SQL</li><li>Power BI</li></ul>
       </div>
-    </section>
-    <!-- /END About Section -->
 
-    <!--Projects Section-->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
-              <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/project.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
-              <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/project.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
-              <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/project.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-        </div>
+      <div class="skill-card">
+        <div class="skill-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3 class="skill-card__title">Systems & Security</h3>
+        <p class="skill-card__desc">Active Directory, VMware, Veeam, SCCM, PowerShell. Cybersecurity & networking.</p>
+        <ul class="skill-chips"><li>AD</li><li>VMware</li><li>Veeam</li><li>SCCM</li><li>PowerShell</li></ul>
       </div>
-    </section>
-    <!-- End Projects Section -->
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a href="#" class="cta-btn cta-btn--resume">Call to Action</a>
-        </div>
+      <div class="skill-card">
+        <div class="skill-card__icon"><i class="fa-solid fa-people-group"></i></div>
+        <h3 class="skill-card__title">Ways of Working</h3>
+        <p class="skill-card__desc">SDLC, clean code, problem-solving, comunicação & teamwork (5+ yrs), Erasmus.</p>
+        <ul class="skill-chips"><li>SDLC</li><li>Clean Code</li><li>Teamwork</li><li>Comms</li><li>Adaptability</li></ul>
       </div>
-    </section>
-    <!-- END Contact Section -->
+    </div>
+  </div>
+</section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-      <div class="container">
-        <a href="#hero" class="back-to-top" aria-label="go back to top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-        </a>
-        <div class="social-links">
-          <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="twitter"
-          >
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="instagram"
-          >
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="codepen"
-          >
-            <i class="fa-brands fa-codepen"></i>
-          </a>
-          <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="linkedin"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="github"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-        <hr />
-        <p class="footer__text">
-          &copy; <span id="year"></span> - Template by
-          <a
-            href="https://github.com/AnilSeervi"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Anil Seervi</a
-          >. <br />Made with &hearts;
+
+<!-- ================= Achievements Strip ================= -->
+<!-- ================= Highlights ================= -->
+<section id="highlights" class="highlights">
+  <div class="container">
+    <h2 class="section-title">Highlights</h2>
+
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <div class="highlight-card__icon"><i class="fa-solid fa-mountain-sun"></i></div>
+        <h3 class="highlight-card__title">1,000+ m Underground</h3>
+        <p class="highlight-card__desc">
+          Supported communication & IT systems inside an active mine during the SOMINCOR internship.
         </p>
       </div>
-    </footer>
-    <!-- END Footer Section -->
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear()
-    </script>
-    <script src="./javascript/vanilla-tilt.min.js"></script>
-    <script type="text/javascript" src="./javascript/valtilt.js"></script>
-  </body>
+      <div class="highlight-card">
+        <div class="highlight-card__icon"><i class="fa-solid fa-globe"></i></div>
+        <h3 class="highlight-card__title">Erasmus @ Vilnius Tech</h3>
+        <p class="highlight-card__desc">
+          International teamwork, adaptability, and English technical communication.
+        </p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-card__icon"><i class="fa-solid fa-people-group"></i></div>
+        <h3 class="highlight-card__title">5+ Years with People</h3>
+        <p class="highlight-card__desc">
+          Customer service experience that shaped empathy, clarity and resilience.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- ================= Projects ================= -->
+<section id="projects">
+  <div class="container">
+    <div class="project-wrapper">
+      <h2 class="section-title dark-blue-text">Projects</h2>
+      <p class="section-subtitle">A selection of academic and personal work</p>
+
+      <!-- SOMINCOR -->
+      <article class="project-block">
+        <h3 class="project-title">IT Internship — Boliden SOMINCOR</h3>
+        <p class="project-desc">
+          Practical work in systems administration, cybersecurity and networking:
+          Active Directory, VMware, Veeam, SCCM and PowerShell.
+          I even descended <strong>1,000+ meters underground</strong> to support and inspect
+          communication systems — a unique view of how tech supports safety and operations.
+        </p>
+        <p class="project-links">
+          <a href="./assets/somincor.pdf" target="_blank" rel="noopener">View Report (PDF)</a>
+        </p>
+      </article>
+
+      <!-- Book Exchange -->
+      <article class="project-block">
+        <h3 class="project-title">Book Exchange — JavaFX App</h3>
+        <p class="project-desc">
+          Desktop application with authentication, CRUD and database integration (JDBC/Hibernate).
+          I implemented backend logic and UI with JavaFX, focusing on clean code and consistent UX.
+        </p>
+      </article>
+
+      <!-- Earth–Moon System (Python) -->
+      <article class="project-block">
+        <h3 class="project-title">Earth–Moon System — Numerical Simulation in Python</h3>
+        <p class="project-desc">
+          Developed a numerical model of the <strong>three-body problem</strong> (Earth, Moon, spacecraft)
+          using the <strong>Runge–Kutta 5(4) adaptive step</strong> method (<code>SciPy solve_ivp</code>).
+          Explored multiple initial conditions to analyze <strong>orbital sensitivity</strong> and
+          <strong>chaotic behavior</strong>. Results were visualized with <strong>Matplotlib</strong>.
+        </p>
+        <ul class="project-tags">
+          <li>Python</li><li>SciPy</li><li>Runge–Kutta 5(4)</li><li>Numerical Methods</li><li>Matplotlib</li>
+        </ul>
+        <p class="project-links">
+          <a href="./assets/earth-moon-simulation.pdf" target="_blank" rel="noopener">View Report (PDF)</a>
+        </p>
+      </article>
+
+    </div> <!-- /.project-wrapper -->
+  </div>   <!-- /.container -->
+</section>
+
+<!-- ================= Contact Section ================= -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-wrapper">
+      <p class="contact-wrapper__text">
+        Open to internship/junior roles in Python, AI & IT Systems — remote or on-site (Évora/Beja).
+      </p>
+      <a href="mailto:vidazinhadiogo@gmail.com" class="cta-btn cta-btn--resume">Email me</a>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= Footer Section ================= -->
+  <footer class="footer">
+    <div class="container">
+      <a href="#hero" class="back-to-top" aria-label="go back to top">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      </a>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/diogo-vidazinha" target="_blank" rel="noopener" aria-label="linkedin">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/xarreujr" target="_blank" rel="noopener" aria-label="github">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        
+        <a href="https://www.instagram.com/mata_27_/" target="_blank" rel="noopener" aria-label="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        
+      </div>
+      <hr/>
+      <p class="footer__text">
+        &copy; <span id="year"></span> — Diogo Vidazinha. Built with DevFolio.
+      </p>
+    </div>
+  </footer>
+  <!-- /END Footer Section -->
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+  <script src="./javascript/vanilla-tilt.min.js"></script>
+  <script type="text/javascript" src="./javascript/valtilt.js"></script>
+</body>
 </html>

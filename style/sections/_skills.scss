@@ -1,0 +1,39 @@
+// Skills section
+.skills {
+  background: #f8fafc;
+  padding: 6rem 0;
+
+  .section-title { margin-bottom: 2.5rem; }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+
+    .skill-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 8px 20px rgba(2,6,23,.08);
+      transition: .25s ease;
+
+      &:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(2,6,23,.12); }
+
+      &__icon { font-size: 28px; margin-bottom: 8px; color: $primary-color; }
+      &__title { font-weight: 800; font-size: 20px; margin: 0 0 6px; }
+      &__desc  { color: #475569; margin: 0 0 12px; }
+
+      .skill-chips {
+        display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0;
+        li {
+          padding: 6px 10px; border-radius: 9999px;
+          background: linear-gradient(135deg, $primary-color, $secondary-color);
+          color: #fff; font-weight: 600; font-size: 12px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) { .skills-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+  @media (max-width: 640px)  { .skills-grid { grid-template-columns: 1fr; } padding: 4rem 0; }
+}

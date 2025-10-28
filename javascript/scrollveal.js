@@ -73,3 +73,7 @@ ScrollReveal().reveal(".fa", {
   delay: 500,
   interval: 100,
 });
+
+ScrollReveal().reveal('#projects .section-title, #projects .section-subtitle', { distance: '20px', duration: 600, origin: 'bottom', interval: 80 });
+ScrollReveal().reveal('#projects .project-block', { distance: '24px', duration: 700, origin: 'bottom', interval: 120, easing: 'cubic-bezier(.2,.8,.2,1)' });
+
