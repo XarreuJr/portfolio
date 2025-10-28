@@ -44,14 +44,24 @@ a:hover {
 }
 
 .section-title {
-  margin-bottom: 4.5rem;
-  font-size: 4rem;
-  text-transform: uppercase;
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #0f172a;
+  margin-bottom: 1.2rem;
+  position: relative;
+  display: inline-block;
 }
-@media (max-width: 37.5em) {
-  .section-title {
-    font-size: 2.8rem;
-  }
+.section-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  margin-top: 0.4rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .dark-blue-color {
@@ -79,6 +89,50 @@ a:hover {
     -webkit-text-fill-color: #5b86e5;
     box-shadow: none;
   }
+}
+
+/* ---------- Polish: typography ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8fafc; /* leve cinza azulado */
+  color: #1e293b;
+}
+
+p {
+  color: #334155;
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+/* Títulos de secção com sublinhado gradiente */
+.section-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #0f172a;
+  margin-bottom: 1.2rem;
+  position: relative;
+  display: inline-block;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  margin: 0.4rem auto 0;
+}
+
+/* Subtítulo opcional por baixo do h2 */
+.section-subtitle {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 2.25rem;
+  text-align: center;
 }
 
 /* Call to Action Button*/
@@ -358,85 +412,136 @@ section .row span {
   }
 }
 
-#hero {
-  min-height: 100vh;
-  height: 100vh;
+/* ---------- Polish: about image ---------- */
+.about-wrapper__image {
   display: flex;
   align-items: center;
-  background: #ffffff;
-  font-weight: 400;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1/1; /* sempre quadrada */
+  border-radius: 50%; /* redonda; trocar para 16px se preferires quadrado */
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.2);
+}
+
+@media (max-width: 768px) {
+  .profile-img {
+    max-width: 260px;
+    margin-bottom: 1.5rem;
+  }
+}
+/* ================= HERO (mantendo as medidas originais) ================= */
+#hero {
+  background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+  min-height: 100vh; /* mantém */
+  height: 100vh; /* mantém */
+  display: flex;
+  align-items: center;
   color: #272341;
-  padding: 0rem 5.6rem;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  line-height: 1.2;
-  animation: hidden 1000ms linear forwards;
-  /* background: url("/src/assets/[your-image].png");
-    background-position: center;
-    background-size: cover; */
+  padding: 0 5.6rem; /* mantém */
+  text-align: left; /* como no layout original */
 }
 @media (max-width: 56.25em) {
   #hero {
     justify-content: center;
-  }
-}
-@media (max-width: 37.5em) {
-  #hero {
-    padding: 0rem 1.6rem;
-  }
-}
-#hero .hero-title {
-  font-size: 5.6rem;
-  font-weight: 700;
-  margin-bottom: 3.2rem;
-  text-align: left;
-}
-#hero .hero-title span {
-  margin: 0;
-  display: inline-block;
-}
-@media (max-width: 75em) {
-  #hero .hero-title {
-    font-size: 4rem;
-  }
-}
-@media (max-width: 56.25em) {
-  #hero .hero-title {
-    font-size: 3.6rem;
     text-align: center;
   }
 }
 @media (max-width: 37.5em) {
-  #hero .hero-title {
+  #hero {
+    padding: 0 1.6rem;
+  }
+}
+
+.hero-title {
+  font-size: 3rem; /* mantém */
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.3; /* mantém */
+  max-width: 800px; /* mantém */
+  margin: 0 auto;
+}
+.hero-title span {
+  margin: 0;
+  display: inline-block;
+}
+@media (max-width: 75em) {
+  .hero-title {
+    font-size: 4rem;
+  }
+}
+.hero-title { /* mantém */ }
+@media (max-width: 56.25em) {
+  .hero-title {
+    font-size: 3.6rem;
+    text-align: center;
+  }
+}
+.hero-title { /* mantém */ }
+@media (max-width: 37.5em) {
+  .hero-title {
     font-size: 3.5rem;
     line-height: 1.5;
   }
 }
+.hero-title { /* mantém */ }
 @media (max-width: 20em) {
-  #hero .hero-title {
+  .hero-title {
     font-size: 2.8rem;
   }
 }
-#hero .hero-cta {
-  display: flex;
-}
-@media (max-width: 56.25em) {
-  #hero .hero-cta {
-    justify-content: center;
-  }
-}
-#hero .hero-cta a {
-  font-size: 2.4rem;
-}
-@media (max-width: 37.5em) {
-  #hero .hero-cta a {
-    font-size: 2rem;
-  }
+.hero-title { /* mantém */ }
+
+/* nome com gradiente no título (mantém) */
+.text-color-main {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+/* container do botão – mantém proporções e gap */
+#hero .hero-cta {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1.2rem; /* mantém */
+}
+
+/* Botão da hero = igual ao "Email me" e SEM texto transparente */
+#hero .hero-cta .cta-btn--resume {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  border: none;
+  padding: 14px 28px; /* mantém look do email me */
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 1.15rem;
+  /* força texto visível; desativa qualquer clip-text herdado */
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: border-box !important;
+  box-shadow: 0 10px 28px rgba(2, 8, 20, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+#hero .hero-cta .cta-btn--resume:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(2, 8, 20, 0.22);
+}
+
+/* (Opcional) seta de scroll se usares */
 .scroll-down-link {
   position: absolute;
   left: 50%;
@@ -447,7 +552,7 @@ section .row span {
 .scroll-down {
   height: 50px;
   width: 30px;
-  border: 2px solid #000000;
+  border: 2px solid #000;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -469,17 +574,6 @@ section .row span {
   animation-delay: 0.3s;
 }
 
-@keyframes hidden {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes scroll-down {
   0% {
     opacity: 0;
@@ -526,10 +620,6 @@ section .row span {
   align-items: center;
   justify-content: center;
 }
-#about .about-wrapper__image img {
-  max-width: 350px;
-  width: 100%;
-}
 @media (max-width: 75em) {
   #about .about-wrapper__image {
     height: 100%;
@@ -551,6 +641,75 @@ section .row span {
   #about .about-wrapper__info {
     align-items: center;
     text-align: center;
+  }
+}
+#about {
+  /* === Vertical Portrait (Glass/Reflex) === */
+}
+#about .about-wrapper__image.portrait {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* moldura e “glass” */
+  padding: 6px;
+  border-radius: 22px;
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 3/4;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px) saturate(150%);
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.15);
+  overflow: hidden;
+  z-index: 1; /* garante que fica acima do fundo com clip-path */
+}
+#about .about-wrapper__image.portrait .profile-portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* enche sem distorcer */
+  object-position: 50% 35%; /* sobe ligeiro o enquadramento do rosto */
+  border-radius: 18px;
+  filter: brightness(0.96) contrast(1.05);
+  transition: transform 0.6s ease, filter 0.5s ease;
+}
+#about .about-wrapper__image.portrait:hover .profile-portrait {
+  transform: scale(1.06);
+  filter: brightness(1.06) contrast(1.07);
+}
+#about .about-wrapper__image.portrait {
+  /* reflexo de luz */
+}
+#about .about-wrapper__image.portrait::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.22), transparent);
+  transform: skewX(-25deg);
+  transition: left 0.8s ease;
+  pointer-events: none;
+}
+#about .about-wrapper__image.portrait:hover::after {
+  left: 110%;
+}
+@media (max-width: 48em) {
+  #about .about-wrapper__image.portrait {
+    max-width: 260px;
+    margin-bottom: 1.5rem;
+  }
+}
+#about .about-wrapper__info-text {
+  font-size: 1.8rem; /* leve aumento */
+  line-height: 1.8;
+  letter-spacing: 0.2px;
+}
+@media (max-width: 768px) {
+  #about .about-wrapper__info-text {
+    font-size: 1rem;
+    line-height: 1.7;
   }
 }
 
@@ -621,6 +780,25 @@ section .row span {
   }
 }
 
+/* ---------- Polish: skill cards ---------- */
+.skills {
+  background: #ffffff;
+}
+
+.skills-grid {
+  gap: 18px;
+}
+
+.skill-card {
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  box-shadow: 0 8px 24px rgba(2, 8, 20, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(2, 8, 20, 0.08);
+}
+
 .highlights {
   padding: 4.5rem 0;
   background: #fff;
@@ -672,6 +850,25 @@ section .row span {
   }
 }
 
+/* ---------- Polish: highlight cards ---------- */
+.highlights {
+  background: #f8fafc;
+}
+
+.highlights-grid {
+  gap: 18px;
+}
+
+.highlight-card {
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  box-shadow: 0 8px 24px rgba(2, 8, 20, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.highlight-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(2, 8, 20, 0.08);
+}
+
 /* ---------- Projects (text-only, polished) ---------- */
 #projects {
   background: #f7f9fc;
@@ -685,9 +882,6 @@ section .row span {
   font-size: 0.95rem;
   margin-bottom: 2.25rem;
   text-align: center;
-}
-#projects {
-  /* cartão */
 }
 #projects .project-wrapper .project-block {
   position: relative;
@@ -728,9 +922,6 @@ section .row span {
   font-size: 0.98rem;
   margin: 0;
 }
-#projects {
-  /* chips */
-}
 #projects .project-tags {
   list-style: none;
   padding: 0;
@@ -749,9 +940,6 @@ section .row span {
   background: rgba(99, 102, 241, 0.12);
   border: 1px solid rgba(99, 102, 241, 0.18);
   backdrop-filter: saturate(140%) blur(2px);
-}
-#projects {
-  /* link como botão */
 }
 #projects .project-links a {
   display: inline-block;
@@ -826,6 +1014,24 @@ section .row span {
   #contact .contact-wrapper a {
     font-size: 2rem;
   }
+}
+
+/* ---------- Polish: contact ---------- */
+#contact {
+  background: #ffffff;
+}
+
+#contact .cta-btn--resume {
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  box-shadow: 0 10px 24px rgba(2, 8, 20, 0.16);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#contact .cta-btn--resume:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(2, 8, 20, 0.2);
 }
 
 /*# sourceMappingURL=main.css.map */

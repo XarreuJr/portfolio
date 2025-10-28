@@ -5,13 +5,9 @@
 
   .section-title { margin-bottom: .25rem; }
   .section-subtitle {
-    color: #6b7280;
-    font-size: .95rem;
-    margin-bottom: 2.25rem;
-    text-align: center;
+    color: #6b7280; font-size: .95rem; margin-bottom: 2.25rem; text-align: center;
   }
 
-  /* cartão */
   .project-wrapper .project-block {
     position: relative;
     max-width: 980px;
@@ -32,27 +28,18 @@
   }
 
   .project-title{
-    font-weight: 800;
-    font-size: 1.15rem;
-    letter-spacing: .2px;
-    color: #0f172a;
-    margin: 0 0 .65rem;
-
+    font-weight: 800; font-size: 1.15rem; letter-spacing: .2px; color: #0f172a; margin: 0 0 .65rem;
     &::after{
-      content: "";
-      display: block;
-      width: 64px; height: 3px; margin-top: .45rem; border-radius: 9999px;
+      content: ""; display: block; width: 64px; height: 3px; margin-top: .45rem; border-radius: 9999px;
       background: linear-gradient(135deg, $primary-color, $secondary-color);
     }
   }
 
   .project-desc{ color:#374151; line-height:1.7; font-size:.98rem; margin:0; }
 
-  /* chips */
   .project-tags{
     list-style:none; padding:0; margin:14px 0 0;
-    display:flex; flex-wrap:wrap; gap:10px;
-    justify-content:flex-start;
+    display:flex; flex-wrap:wrap; gap:10px; justify-content:flex-start;
   }
   .project-tags li{
     padding:7px 12px; border-radius:9999px; font-weight:700; font-size:.76rem;
@@ -60,7 +47,6 @@
     backdrop-filter:saturate(140%) blur(2px);
   }
 
-  /* link como botão */
   .project-links a{
     display:inline-block; margin-top:.9rem; padding:10px 14px;
     border-radius:10px; font-weight:800; font-size:.9rem; color:#fff; text-decoration:none;

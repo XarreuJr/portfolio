@@ -74,6 +74,13 @@ ScrollReveal().reveal(".fa", {
   interval: 100,
 });
 
-ScrollReveal().reveal('#projects .section-title, #projects .section-subtitle', { distance: '20px', duration: 600, origin: 'bottom', interval: 80 });
-ScrollReveal().reveal('#projects .project-block', { distance: '24px', duration: 700, origin: 'bottom', interval: 120, easing: 'cubic-bezier(.2,.8,.2,1)' });
+// polish: reveals
+ScrollReveal().reveal(
+  '#about .section-title, #skills .section-title, #highlights .section-title, #projects .section-title, #projects .section-subtitle, #contact .section-title',
+  { distance: '20px', duration: 600, origin: 'bottom', interval: 80 }
+);
 
+ScrollReveal().reveal(
+  '.skill-card, .highlight-card, #projects .project-block',
+  { distance: '24px', duration: 700, origin: 'bottom', interval: 120, easing: 'cubic-bezier(.2,.8,.2,1)' }
+);

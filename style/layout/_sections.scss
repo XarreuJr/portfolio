@@ -52,3 +52,25 @@ section {
     width: 100%;
   }
 }
+/* ---------- Polish: about image ---------- */
+.about-wrapper__image {
+  display: flex; align-items: center; justify-content: center;
+}
+
+.profile-img {
+  width: 100%; max-width: 380px;
+  aspect-ratio: 1 / 1;     /* sempre quadrada */
+  border-radius: 50%;      /* redonda; trocar para 16px se preferires quadrado */
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.15);
+  transition: transform .3s ease, box-shadow .3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.2);
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-img { max-width: 260px; margin-bottom: 1.5rem; }
+}

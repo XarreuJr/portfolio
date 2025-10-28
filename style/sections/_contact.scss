@@ -38,3 +38,17 @@
     }
   }
 }
+/* ---------- Polish: contact ---------- */
+#contact { background: #ffffff; }
+
+#contact .cta-btn--resume {
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 800;
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+  box-shadow: 0 10px 24px rgba(2,8,20,.16);
+  transition: transform .2s ease, box-shadow .2s ease;
+
+  &:hover { transform: translateY(-2px); box-shadow: 0 16px 32px rgba(2,8,20,.2); }
+}
+
