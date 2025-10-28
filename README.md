@@ -6,7 +6,7 @@ A clean, responsive, one-page website built with **HTML, SCSS, and vanilla JS**,
 ---
 
 ## 🚀 Live Preview
-🔗 [**View Portfolio**](https://xarreujr.github.io/portofolio/)  
+🔗 [**View Portfolio**](https://xarreujr.github.io/portfolio/)  
 
 ---
 
