@@ -61,7 +61,6 @@ Explored orbital sensitivity and chaotic behavior with different initial conditi
 
 ## 📜 Certificates
 - 🎖️ [Internship Certificate — Boliden SOMINCOR](./assets/somincor-certificate.pdf)
-- 🧠 [Generative AI Microcredential — IPBeja](#) *(optional, if available)*
 
 ---
 
