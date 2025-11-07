@@ -1,0 +1,17 @@
+{
+  "name": "devfolio",
+  "version": "1.0.0",
+  "description": "Welcome to my personal portfolio!  \r A clean, responsive, one-page website built with **HTML, SCSS, and vanilla JS**, inspired by the [DevFolio](https://github.com/AnilSeervi/DevFolio) template and customized to reflect my real academic and professional experience.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass style/main.scss css/main.css --style=expanded",
+    "sass:watch": "sass --watch style/main.scss css/main.css --style=expanded"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.93.3"
+  }
+}

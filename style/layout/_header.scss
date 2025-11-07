@@ -1,0 +1,62 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+  height: var(--header-h);
+  background: rgba(10,10,10,0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  z-index: 1000;
+}
+
+.site-nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 16px;
+
+  .brand {
+    font-weight: 700;
+    color: $text-color;
+    text-decoration: none;
+    letter-spacing: .2px;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0; padding: 0;
+
+    a {
+      color: $muted;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 10px;
+      border-radius: 10px;
+      transition: all .2s ease;
+
+      &:hover { color: $text-color; }
+
+      &.active {
+        color: $text-color;
+        background: rgba(255,255,255,0.08);
+      }
+    }
+  }
+}
+
+/* Compensar o conteúdo por causa do header fixo */
+body {
+  padding-top: var(--header-h);
+  scroll-behavior: smooth; // scroll suave nativo
+}
+
+/* Offset de âncora para secções quando se navega por hash */
+section[id] {
+  scroll-margin-top: calc(var(--header-h) + 12px);
+}

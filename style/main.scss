@@ -5,8 +5,11 @@
 
 @import "./components/buttons";
 
+@import "layout/_header"; 
 @import "./layout/footer";
 @import "./layout/sections";
+
+@import "sections/_certifications";
 
 @import "./sections/hero";
 @import "./sections/about";
