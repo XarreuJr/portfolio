@@ -43,34 +43,42 @@
 <body>
   <!-- ================= Header (sticky) ================= -->
   <header class="site-header" role="banner">
-    <nav class="site-nav" aria-label="Primary">
-      <a class="brand" href="#hero">Diogo Vidazinha</a>
+  <nav class="site-nav" aria-label="Primary">
+    <a class="brand" href="#hero">Diogo Vidazinha</a>
 
-      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Abrir menu">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </button>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Open menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
 
-      <ul class="nav-links">
-        <li><a href="#about"    data-nav>Sobre mim</a></li>
-        <li><a href="#skills"   data-nav>Competências</a></li>
-        <li><a href="#projects" data-nav>Projetos</a></li>
-        <!-- <li><a href="#certifications"  data-nav>Certificações</a></li> -->
-        <li><a href="#contact"  data-nav>Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="nav-backdrop" id="nav-backdrop" hidden></div>
+    <ul class="nav-links" id="primary-menu">
+      <li><a href="#about"    data-nav data-translate="nav_about">Sobre mim</a></li>
+      <li><a href="#skills"   data-nav data-translate="nav_skills">Competências</a></li>
+      <li><a href="#projects" data-nav data-translate="nav_projects">Projetos</a></li>
+      <li><a href="#contact"  data-nav data-translate="nav_contact">Contacto</a></li>
+    </ul>
+
+    <!-- Botões de idioma -->
+    <div class="language-switcher">
+      <button class="lang-btn active" data-lang="pt">PT</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+  </nav>
+</header>
+<div class="nav-backdrop" id="nav-backdrop" hidden></div>
+
 
   <main>
     <!-- ================= Hero ================= -->
     <section id="hero">
       <div class="container">
-        <h1 class="hero-title">
+        <h1 class="hero-title" data-translate="hero_title">
           Olá, o meu nome é <span class="text-color-main name">Diogo Vidazinha</span><br/>
-          Focado <span class="text-color-main name">IA</span>, sem deixar de lado tudo o que a tecnologia ainda me pode ensinar.
+          Focado <span class="text-color-main">IA</span>, sem deixar de lado tudo o que a tecnologia ainda me pode ensinar.
         </h1>
         <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#about">Saber mais sobre mim</a>
+          <a class="cta-btn cta-btn--hero" href="#about" data-translate="hero_button">
+            Saber mais sobre mim
+          </a>
         </p>
       </div>
       <a href="#about" class="scroll-down-link" aria-label="scroll-down">
@@ -78,39 +86,42 @@
       </a>
     </section>
 
+
     <!-- ================= About ================= -->
   <section id="about">
   <div class="container">
-    <h2 class="section-title">Sobre mim</h2>
+    <h2 class="section-title" data-translate="about_title">Sobre mim</h2>
     <div class="row about-wrapper">
       <div class="about-wrapper__image portrait">
         <img class="profile-portrait" src="./assets/diogo.png" alt="Retrato de Diogo Vidazinha"/>
       </div>
+
       <div class="about-wrapper__info">
-        <p class="about-wrapper__info-text">
+
+        <p class="about-wrapper__info-text" data-translate="about_p1">
           Finalista de <strong><a href="https://www.ipbeja.pt" target="_blank" rel="noopener">Engenharia Informática</a></strong> no IPBeja, com interesse especial em
-          <strong>Inteligência Artificial</strong>. Gosto de aprender praticando,
+          <strong>Inteligência Artificial</strong>. Gosto de aprender a praticar,
           seja em <strong>projetos académicos</strong>, desafios práticos ou novas tecnologias.
         </p>
 
-        <p class="about-wrapper__info-text">
+        <p class="about-wrapper__info-text" data-translate="about_p2">
           Realizei um <strong>estágio de verão</strong> na <strong><a href="https://www.boliden.com/operations/mines/boliden-somincor/" target="_blank" rel="noopener">Boliden SOMINCOR</a></strong>,
           onde tive contacto com <strong>administração de sistemas</strong>, <strong>redes</strong> e <strong>desenvolvimento de software</strong>.
           Apoiei operações tecnológicas a mais de <strong>1&nbsp;000 metros de profundidade</strong>,
-          uma experiência que me deu uma perspetiva única sobre TI em ambientes reais e exigentes. <br>
+          uma experiência que me deu uma perspetiva única sobre TI em ambientes reais e exigentes. <br><br>
 
           A experiência Erasmus na <strong><a href="https://vilniustech.lt" target="_blank" rel="noopener">Vilnius Tech</a></strong>
-          reforçou a minha <strong>adaptação</strong>, <strong>comunicação</strong> e <strong>capacidade de colaborar em contextos diversos e multiculturais.</strong>. <br>
+          reforçou a minha <strong>adaptação</strong>, <strong>comunicação</strong> e <strong>capacidade de colaborar em contextos diversos e multiculturais</strong>. <br><br>
 
           Trago também mais de <strong>5 anos de contacto direto com o público</strong>, experiência que fortaleceu a minha empatia, comunicação e resiliência.
         </p>
 
-        <p class="about-wrapper__info-text">
+        <p class="about-wrapper__info-text" data-translate="about_p3">
           Equilibro o meu dia-a-dia com desporto, música, leitura para desenvolvimento pessoal e uma grande <strong>paixão por motas</strong>.
         </p>
 
         <span class="about-wrapper__cta">
-          <a href="./assets/CV_Diogo_2025.pdf" class="cta-btn cta-btn--resume" target="_blank" rel="noopener">
+          <a href="./assets/CV_Diogo_2025.pdf" class="cta-btn cta-btn--resume" target="_blank" rel="noopener" data-translate="about_cv_btn">
             Ver CV
           </a>
         </span>
@@ -120,18 +131,19 @@
   </div>
 </section>
 
+
   <!-- ================= Skills ================= -->
 <section id="skills" class="skills">
   <div class="container">
-    <h2 class="section-title dark-blue-text">Competências</h2>
+    <h2 class="section-title dark-blue-text" data-translate="skills_title">Competências</h2>
 
     <div class="skills-grid">
 
       <!-- IA & Desenvolvimento -->
       <div class="skill-card">
         <div class="skill-card__icon"><i class="fa-brands fa-python"></i></div>
-        <h3 class="skill-card__title">IA & Desenvolvimento</h3>
-        <p class="skill-card__desc">
+        <h3 class="skill-card__title" data-translate="skills_card1_title">IA & Desenvolvimento</h3>
+        <p class="skill-card__desc" data-translate="skills_card1_desc">
           Python, Inteligência Artificial e desenvolvimento de aplicações académicas e pessoais.
         </p>
         <ul class="skill-chips">
@@ -146,8 +158,8 @@
       <!-- Sistemas & Infraestrutura -->
       <div class="skill-card">
         <div class="skill-card__icon"><i class="fa-solid fa-network-wired"></i></div>
-        <h3 class="skill-card__title">Sistemas & Infraestrutura</h3>
-        <p class="skill-card__desc">
+        <h3 class="skill-card__title" data-translate="skills_card2_title">Sistemas & Infraestrutura</h3>
+        <p class="skill-card__desc" data-translate="skills_card2_desc">
           Bases em administração de sistemas, redes, virtualização, backups e automação, adquiridas no estágio na SOMINCOR.
         </p>
         <ul class="skill-chips">
@@ -162,8 +174,8 @@
       <!-- Competências Pessoais -->
       <div class="skill-card">
         <div class="skill-card__icon"><i class="fa-solid fa-people-group"></i></div>
-        <h3 class="skill-card__title">Competências Pessoais</h3>
-        <p class="skill-card__desc">
+        <h3 class="skill-card__title" data-translate="skills_card3_title">Competências Pessoais</h3>
+        <p class="skill-card__desc" data-translate="skills_card3_desc">
           Comunicação, trabalho em equipa, adaptabilidade, resolução de problemas e aprendizagem contínua.
         </p>
         <ul class="skill-chips">
@@ -180,43 +192,45 @@
 </section>
 
 
+
 <!-- ================= Highlights ================= -->
 <section id="highlights" class="highlights">
   <div class="container">
-    <h2 class="section-title">Destaques</h2>
+    <h2 class="section-title" data-translate="highlights_title">Destaques</h2>
 
     <div class="highlights-grid">
 
-      <!-- Mina -->
+      <!-- Card 1 -->
       <div class="highlight-card">
         <div class="highlight-card__icon"><i class="fa-solid fa-mountain-sun"></i></div>
-        <h3 class="highlight-card__title">1&nbsp;000+ m de profundidade</h3>
-        <p class="highlight-card__desc">
-          Suporte a sistemas de comunicação e TI no interior de uma mina ativa, uma experiência única do estágio na SOMINCOR.
+        <h3 class="highlight-card__title" data-translate="highlights_card1_title">1&nbsp;000+ m de profundidade</h3>
+        <p class="highlight-card__desc" data-translate="highlights_card1_desc">
+          Apoio a sistemas de comunicação e TI no interior de uma mina ativa durante o estágio na SOMINCOR.
         </p>
       </div>
 
-      <!-- Erasmus -->
+      <!-- Card 2 -->
       <div class="highlight-card">
         <div class="highlight-card__icon"><i class="fa-solid fa-globe"></i></div>
-        <h3 class="highlight-card__title">Erasmus @ Vilnius Tech</h3>
-        <p class="highlight-card__desc">
-          Experiência internacional que reforçou adaptação, comunicação e trabalho em ambientes multiculturais.
+        <h3 class="highlight-card__title" data-translate="highlights_card2_title">Erasmus @ Vilnius Tech</h3>
+        <p class="highlight-card__desc" data-translate="highlights_card2_desc">
+          Trabalho em equipa internacional, adaptação rápida e comunicação técnica em inglês.
         </p>
       </div>
 
-      <!-- Contacto com pessoas -->
+      <!-- Card 3 -->
       <div class="highlight-card">
         <div class="highlight-card__icon"><i class="fa-solid fa-people-group"></i></div>
-        <h3 class="highlight-card__title">5+ anos com pessoas</h3>
-        <p class="highlight-card__desc">
-          Atendimento ao público enquanto estudava, experiência que reforçou empatia, resiliência e comunicação clara.
+        <h3 class="highlight-card__title" data-translate="highlights_card3_title">5+ anos com pessoas</h3>
+        <p class="highlight-card__desc" data-translate="highlights_card3_desc">
+          Vivência em atendimento ao público enquanto concluía o curso, desenvolvendo empatia, clareza e confiança na comunicação.
         </p>
       </div>
 
     </div>
   </div>
 </section>
+
 
 
     <!-- ================= Projects ================= -->
@@ -307,19 +321,20 @@
     <!-- ================= Contact ================= -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">Contacto</h2>
+        <h2 class="section-title" data-translate="contact_title">Contacto</h2>
         <div class="contact-wrapper">
-          <p class="contact-wrapper__text">
+          <p class="contact-wrapper__text" data-translate="contact_text">
             Disponível para estágios e posições júnior em Python, IA e tecnologia. Aberto a novos desafios,
-            em regime remoto ou presencial, e motivado a aprender e evoluir.
+            em regime remoto ou presencial (Évora/Beja), e motivado a aprender e evoluir.
           </p>
-          <a href="mailto:vidazinhadiogo@gmail.com" class="cta-btn cta-btn--resume">
+          <a href="mailto:vidazinhadiogo@gmail.com"
+            class="cta-btn cta-btn--resume"
+            data-translate="contact_button">
             Enviar email
           </a>
         </div>
       </div>
     </section>
-  </main>
 
   <!-- ================= Footer ================= -->
   <footer class="footer">
@@ -354,5 +369,6 @@
   <!-- <script defer src="./javascript/certifications.js"></script> -->
   <script defer src="./javascript/nav-scrollspy.js"></script>
   <script defer src="./javascript/nav-mobile.js"></script>
+  <script defer src="./javascript/lang.js"></script>
 </body>
 </html>
