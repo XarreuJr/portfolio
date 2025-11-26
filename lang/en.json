@@ -1,0 +1,56 @@
+{
+  "nav_about": "About",
+  "nav_skills": "Skills",
+  "nav_projects": "Projects",
+  "nav_contact": "Contact",
+
+  "hero_line1": "Focused on AI while staying open to everything technology can teach me.",
+  "hero_button": "Get to know me",
+  "hero_title": "Hi, my name is <span class=\"text-color-main name\">Diogo Vidazinha</span><br/>Focused on <span class=\"text-color-main\">AI</span>, while staying open to everything technology can still teach me.",
+
+  "about_title": "About Me",
+  "about_p1": "Final-year <strong><a href=\"https://www.ipbeja.pt\" target=\"_blank\" rel=\"noopener\">Computer Engineering</a></strong> student at IPBeja with a particular interest in <strong>Artificial Intelligence</strong>. I enjoy learning by doing, whether through <strong>academic projects</strong>, practical challenges or new technologies.",
+  "about_p2": "I completed a <strong>summer internship</strong> at <strong><a href=\"https://www.boliden.com/operations/mines/boliden-somincor/\" target=\"_blank\" rel=\"noopener\">Boliden SOMINCOR</a></strong>, where I gained experience in <strong>system administration</strong>, <strong>networking</strong> and <strong>software development</strong>. I also supported technological operations at more than <strong>1,000 meters underground</strong>, a unique opportunity that gave me real insight into how IT supports safety and critical operations.<br><br>My Erasmus experience at <strong><a href=\"https://vilniustech.lt\" target=\"_blank\" rel=\"noopener\">Vilnius Tech</a></strong> strengthened my <strong>adaptability</strong>, <strong>communication</strong> and ability to collaborate in <strong>diverse and multicultural environments</strong>.<br><br>I also bring over <strong>5 years of direct customer-facing experience</strong>, which helped develop empathy, confidence and clear communication.",
+  "about_p3": "Outside of technology, I balance my day with sports, music, personal development reading and a strong <strong>passion for motorcycles</strong>.",
+  "about_cv_btn": "View Resume",
+
+  "skills_title": "Skills",
+
+  "skills_card1_title": "AI & Development",
+  "skills_card1_desc": "Python, Artificial Intelligence and development of academic and personal applications.",
+
+  "skills_card2_title": "Systems & Infrastructure",
+  "skills_card2_desc": "Foundations in system administration, networking, virtualisation, backups and automation, gained during my internship at SOMINCOR.",
+
+  "skills_card3_title": "Personal Skills",
+  "skills_card3_desc": "Communication, teamwork, adaptability, problem-solving and continuous learning.",
+
+  "highlights_title": "Highlights",
+
+  "highlights_card1_title": "1,000+ m Underground",
+  "highlights_card1_desc": "Supported communication and IT systems inside an active mine during my internship at SOMINCOR.",
+
+  "highlights_card2_title": "Erasmus @ Vilnius Tech",
+  "highlights_card2_desc": "International teamwork, quick adaptation and technical communication in English.",
+
+  "highlights_card3_title": "5+ Years With People",
+  "highlights_card3_desc": "Customer-facing experience while studying, developing empathy, clarity and confidence in communication.",
+
+  "projects_title": "Projects",
+  "projects_subtitle": "Some of my most relevant academic and personal work",
+
+  "projects_card1_title": "IT Internship — Boliden SOMINCOR",
+  "projects_card1_desc": "Hands-on work in system administration, cybersecurity and networking. I went down <strong>over 1,000 meters underground</strong> to support and inspect communication systems — a unique perspective on how technology supports safety and operations.",
+  "projects_card1_btn": "View Report (PDF)",
+
+  "projects_card2_title": "Book Exchange — JavaFX Application",
+  "projects_card2_desc": "Desktop application with <strong>authentication</strong>, <strong>full CRUD</strong> and <strong>database integration</strong>. I implemented both <strong>backend logic</strong> and the <strong>user interface</strong> using <strong>JavaFX</strong>, with a focus on <strong>clean code</strong> and consistent user experience.",
+
+  "projects_card3_title": "Earth–Moon System — Numerical Simulation in Python",
+  "projects_card3_desc": "Development of a numerical model of the <strong>three-body problem</strong> (Earth, Moon, spacecraft) using the <strong>Runge–Kutta 5(4)</strong> adaptive method via SciPy’s <code>solve_ivp</code>. Explored multiple initial conditions to analyse <strong>orbital sensitivity</strong> and <strong>chaotic behaviour</strong>.",
+  "projects_card3_btn": "View Report (PDF)",
+
+  "contact_title": "Contact",
+  "contact_text": "Available for internships and junior roles in Python, AI and technology. Open to new challenges, remote or on-site (Évora/Beja), motivated to learn and grow.",
+  "contact_button": "Email me"
+}

@@ -1,0 +1,55 @@
+{
+  "nav_about": "Sobre mim",
+  "nav_skills": "Competências",
+  "nav_projects": "Projetos",
+  "nav_contact": "Contacto",
+
+  "hero_line1": "Focado em IA, sem deixar de lado tudo o que a tecnologia ainda me pode ensinar.",
+  "hero_button": "Saber mais sobre mim",
+  "hero_title": "Olá, o meu nome é <span class=\"text-color-main name\">Diogo Vidazinha</span><br/>Focado <span class=\"text-color-main\">IA</span>, sem deixar de lado tudo o que a tecnologia ainda me pode ensinar.",
+  
+  "about_title": "Sobre mim","about_p1": "Finalista de <strong><a href=\"https://www.ipbeja.pt\" target=\"_blank\" rel=\"noopener\">Engenharia Informática</a></strong> no IPBeja, com interesse especial em <strong>Inteligência Artificial</strong>. Gosto de aprender a praticar, seja em <strong>projetos académicos</strong>, desafios práticos ou novas tecnologias.",
+  "about_p2": "Realizei um <strong>estágio de verão</strong> na <strong><a href=\"https://www.boliden.com/operations/mines/boliden-somincor/\" target=\"_blank\" rel=\"noopener\">Boliden SOMINCOR</a></strong>, onde tive contacto com <strong>administração de sistemas</strong>, <strong>redes</strong> e <strong>desenvolvimento de software</strong>. Apoiei operações tecnológicas a mais de <strong>1&nbsp;000 metros de profundidade</strong>, uma experiência que me deu uma perspetiva única sobre TI em ambientes reais e exigentes.<br><br>A experiência Erasmus na <strong><a href=\"https://vilniustech.lt\" target=\"_blank\" rel=\"noopener\">Vilnius Tech</a></strong> reforçou a minha <strong>adaptação</strong>, <strong>comunicação</strong> e <strong>capacidade de colaborar em contextos diversos e multiculturais</strong>.<br><br>Trago também mais de <strong>5 anos de contacto direto com o público</strong>, experiência que fortaleceu a minha empatia, comunicação e resiliência.",
+  "about_p3": "Equilibro o meu dia-a-dia com desporto, música, leitura para desenvolvimento pessoal e uma grande <strong>paixão por motas</strong>.",
+  "about_cv_btn": "Ver CV",
+
+  "skills_title": "Competências",
+
+  "skills_card1_title": "IA & Desenvolvimento",
+  "skills_card1_desc": "Python, Inteligência Artificial e desenvolvimento de aplicações académicas e pessoais.",
+
+  "skills_card2_title": "Sistemas & Infraestrutura",
+  "skills_card2_desc": "Bases em administração de sistemas, redes, virtualização, backups e automação, adquiridas no estágio na SOMINCOR.",
+
+  "skills_card3_title": "Competências Pessoais",
+  "skills_card3_desc": "Comunicação, trabalho em equipa, adaptabilidade, resolução de problemas e aprendizagem contínua.",
+
+  "highlights_title": "Destaques",
+
+  "highlights_card1_title": "1&nbsp;000+ m de profundidade",
+  "highlights_card1_desc": "Apoio a sistemas de comunicação e TI no interior de uma mina ativa durante o estágio na SOMINCOR.",
+
+  "highlights_card2_title": "Erasmus @ Vilnius Tech",
+  "highlights_card2_desc": "Trabalho em equipa internacional, adaptação rápida e comunicação técnica em inglês.",
+
+  "highlights_card3_title": "5+ anos com pessoas",
+  "highlights_card3_desc": "Vivência em atendimento ao público enquanto concluía o curso, desenvolvendo empatia, clareza e confiança na comunicação.",
+
+  "projects_title": "Projetos",
+  "projects_subtitle": "Alguns dos trabalhos académicos e pessoais mais relevantes",
+
+  "projects_card1_title": "Estágio em TI — Boliden SOMINCOR",
+  "projects_card1_desc": "Trabalho prático em administração de sistemas, cibersegurança e redes. Desci a <strong>mais de 1&nbsp;000 metros de profundidade</strong> para apoiar e inspecionar sistemas de comunicação — uma perspetiva única de como a tecnologia suporta a segurança e a operação.",
+  "projects_card1_btn": "Ver relatório (PDF)",
+
+  "projects_card2_title": "Book Exchange — Aplicação JavaFX",
+  "projects_card2_desc": "Aplicação desktop com <strong>autenticação</strong>, <strong>CRUD completo</strong> e <strong>integração com base de dados</strong>. Implementei a lógica de <strong>backend</strong> e a <strong>interface</strong> em <strong>JavaFX</strong>, com foco em <strong>clean code</strong> e numa experiência de utilização consistente.",
+
+  "projects_card3_title": "Sistema Terra–Lua — Simulação Numérica em Python",
+  "projects_card3_desc": "Desenvolvimento de um modelo numérico do <strong>problema de três corpos</strong> (Terra, Lua, nave) usando o método <strong>Runge–Kutta 5(4)</strong> com passo adaptativo, através da função <code>solve_ivp</code> do SciPy. Explorei múltiplas condições iniciais para analisar <strong>sensibilidade orbital</strong> e <strong>comportamento caótico</strong>.",
+  "projects_card3_btn": "Ver relatório (PDF)",
+
+  "contact_title": "Contacto",
+  "contact_text": "Disponível para estágios e posições júnior em Python, IA e tecnologia. Aberto a novos desafios, em regime remoto ou presencial (Évora/Beja), e motivado a aprender e evoluir.",
+  "contact_button": "Enviar email"
+}
