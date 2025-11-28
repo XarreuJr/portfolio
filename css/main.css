@@ -722,33 +722,25 @@ section .row span {
     font-size: 4rem;
   }
 }
-.hero-title { /* mantém */ }
+/* removed empty .hero-title ruleset */
 @media (max-width: 56.25em) {
   .hero-title {
     font-size: 3.6rem;
     text-align: center;
   }
 }
-.hero-title { /* mantém */ }
+/* removed empty .hero-title ruleset */
 @media (max-width: 37.5em) {
   .hero-title {
     font-size: 3.5rem;
     line-height: 1.5;
   }
 }
-.hero-title { /* mantém */ }
+/* removed empty .hero-title ruleset */
 @media (max-width: 20em) {
   .hero-title {
     font-size: 2.8rem;
   }
-}
-.hero-title { /* mantém */ }
-
-/* nome com gradiente no título (mantém) */
-.text-color-main {
-  background: linear-gradient(135deg, #36d1dc, #5b86e5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 /* container do botão – mantém proporções e gap */
@@ -886,9 +878,7 @@ section .row span {
     text-align: center;
   }
 }
-#about {
-  /* === Vertical Portrait (Glass/Reflex) === */
-}
+
 #about .about-wrapper__image.portrait {
   position: relative;
   display: flex;
@@ -920,9 +910,7 @@ section .row span {
   transform: scale(1.06);
   filter: brightness(1.06) contrast(1.07);
 }
-#about .about-wrapper__image.portrait {
-  /* reflexo de luz */
-}
+
 #about .about-wrapper__image.portrait::after {
   content: "";
   position: absolute;
@@ -1351,3 +1339,233 @@ body{ padding-top: calc(var(--header-h) + env(safe-area-inset-top,0px)); }
 .site-header.nav-open + .nav-backdrop{
   opacity:1; pointer-events:auto;
 }
+
+/* === Uniformizar cor dos links === */
+a {
+  color: inherit; /* herda a cor normal do texto */
+  text-decoration: none; /* remove underline */
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+a:hover {
+  color: inherit; /* mantém a mesma cor no hover */
+  text-decoration: underline; 
+  text-decoration-color: rgba(0,0,0,0.35); /* linha suave */
+}
+
+.about-wrapper__info-text,
+.project-desc,
+.contact-wrapper__text,
+.highlight-card__desc {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Texto maior nas competências */
+.skill-card__desc {
+  font-size: 1.3rem;
+  line-height: 1.55;
+}
+
+/* Texto maior nos destaques */
+.highlight-card__desc {
+  font-size: 1.3rem; 
+  line-height: 1.55;
+}
+
+.project-block .project-desc {
+  font-size: 1.3rem !important;
+  line-height: 1.6 !important;
+}
+
+/* ===== Language Switcher — versão minimalista ===== */
+
+.language-switcher {
+  display: inline-flex;
+  gap: 0.6rem;       /* mais espaçamento entre PT / EN */
+  margin-left: 1rem;
+  align-items: center;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;       /* AUMENTADO (antes ~0.75–0.8rem) */
+  text-transform: uppercase;
+  font-weight: 600;         /* mais robusto */
+  cursor: pointer;
+  color: #475569;           /* slate-600 */
+  padding: 0.35rem 0.6rem;  /* botões maiores */
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+  background: rgba(100, 116, 139, 0.12);
+  color: #0f172a;     /* texto mais escuro no hover */
+}
+
+.lang-btn.active {
+  background: rgba(14, 165, 233, 0.22); /* azul suave, mais visível */
+  color: #0ea5e9;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(14, 165, 233, 0.25); /* sombra leve */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .lang-btn {
+    font-size: 1.2rem;      /* ligeiramente reduzido em mobile */
+    padding: 0.3rem 0.55rem;
+  }
+}
+
+/* ===== Corrigir proporção da foto no ABOUT ===== */
+.about-wrapper__image img {
+  width: 100%;
+  height: auto;             /* impede esticar vertical */
+  object-fit: cover;        /* mantém qualidade */
+  border-radius: 1.25rem;   /* mais elegante */
+}
+
+/* Limitar a altura máxima (ajusta se quiseres maior/menor) */
+.about-wrapper__image {
+  max-height: 560px;        /* podes ajustar: 520 / 580 / etc. */
+  overflow: hidden;         /* corta excesso sem deformar */
+}
+
+.about-wrapper__image {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  border-radius: 1.3rem;
+}
+
+.about-wrapper {
+  align-items: center;
+}
+
+/* ================= NAVBAR FLUTUANTE (mantém glass original) ================= */
+
+.site-header {
+  position: sticky;
+  top: 1.2rem;
+  z-index: 999;
+  background: transparent;
+  padding: 0 1.5rem;
+}
+
+.site-nav {
+  border-radius: 16px;         
+  backdrop-filter: blur(12px);  /* Mantém o efeito vidro */
+  -webkit-backdrop-filter: blur(12px);
+
+  background: rgba(20, 20, 20, 0.637);
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.25),
+    0 4px 12px rgba(0, 0, 0, 0.15);
+  
+  
+  transition: box-shadow .25s ease;
+}
+
+.site-nav:hover {
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.32),
+    0 6px 18px rgba(0, 0, 0, 0.20);
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    top: 0.75rem;
+    padding: 0 0.75rem;
+  }
+
+  .site-nav {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+  }
+}
+
+/* ===== NAVBAR MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+  /* Header colado ao topo, sem margem lateral */
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    z-index: 9999;
+  }
+
+  /* Navbar ocupa toda a largura, sem bordas arredondadas */
+  .site-nav {
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0.7rem 1rem;
+    background: rgba(20, 20, 20, 0.637); /* mantém o estilo escuro/vidro */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  /* Para o conteúdo não ficar escondido atrás da nav fixa */
+  body {
+    padding-top: 70px; /* ajusta se a navbar for mais alta */
+  }
+}
+
+/* ===== PT/EN dentro do menu mobile ===== */
+@media (max-width: 768px) {
+
+  /* Centro quando o menu está aberto */
+  .nav-open .language-switcher {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  /* Estilo dos botões dentro do menu */
+  .nav-open .lang-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.2s ease;
+  }
+
+  /* Hover */
+  .nav-open .lang-btn:hover {
+    background: rgba(255,255,255,0.15);
+  }
+}
+
+/* ===== CENTRAR FOTO NO MOBILE (versão final) ===== */
+@media (max-width: 768px) {
+
+  /* A linha do About passa a centrar os filhos (imagem + texto) */
+  .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centra horizontalmente */
+  }
+
+  /* O wrapper da imagem fica centrado */
+  .about-wrapper__image {
+    margin: 0 auto 1.5rem;   /* centra + espaço em baixo */
+  }
+
+  /* A própria imagem ganha largura controlada e centrada */
+  .about-wrapper__image img {
+    width: 80%;
+    max-width: 320px;
+    display: block;
+    margin: 0 auto;          /* garante centragem */
+  }
+}
+
