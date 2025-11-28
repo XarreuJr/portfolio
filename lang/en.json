@@ -9,7 +9,7 @@
   "hero_title": "Hi, my name is <span class=\"text-color-main name\">Diogo Vidazinha</span><br/>Focused on <span class=\"text-color-main\">AI</span>, while staying open to everything technology can still teach me.",
 
   "about_title": "About Me",
-  "about_p1": "Final-year <strong><a href=\"https://www.ipbeja.pt\" target=\"_blank\" rel=\"noopener\">Computer Engineering</a></strong> student at IPBeja with a particular interest in <strong>Artificial Intelligence</strong>. I enjoy learning by doing, whether through <strong>academic projects</strong>, practical challenges or new technologies.",
+  "about_p1": "Final-year Computer Engineering student at <strong><a href=\"https://www.ipbeja.pt\" target=\"_blank\" rel=\"noopener\">IPBeja</a></strong> with a particular interest in <strong>Artificial Intelligence</strong>. I enjoy learning by doing, whether through <strong>academic projects</strong>, practical challenges or new technologies.",
   "about_p2": "I completed a <strong>summer internship</strong> at <strong><a href=\"https://www.boliden.com/operations/mines/boliden-somincor/\" target=\"_blank\" rel=\"noopener\">Boliden SOMINCOR</a></strong>, where I gained experience in <strong>system administration</strong>, <strong>networking</strong> and <strong>software development</strong>. I also supported technological operations at more than <strong>1,000 meters underground</strong>, a unique opportunity that gave me real insight into how IT supports safety and critical operations.<br><br>My Erasmus experience at <strong><a href=\"https://vilniustech.lt\" target=\"_blank\" rel=\"noopener\">Vilnius Tech</a></strong> strengthened my <strong>adaptability</strong>, <strong>communication</strong> and ability to collaborate in <strong>diverse and multicultural environments</strong>.<br><br>I also bring over <strong>5 years of direct customer-facing experience</strong>, which helped develop empathy, confidence and clear communication.",
   "about_p3": "Outside of technology, I balance my day with sports, music, personal development reading and a strong <strong>passion for motorcycles</strong>.",
   "about_cv_btn": "View Resume",
@@ -27,8 +27,8 @@
 
   "highlights_title": "Highlights",
 
-  "highlights_card1_title": "1,000+ m Underground",
-  "highlights_card1_desc": "Supported communication and IT systems inside an active mine during my internship at SOMINCOR.",
+  "highlights_card1_title": "Working Student",
+  "highlights_card1_desc": "Balancing work and studies since the age of 16, developing discipline, time management, and a sense of responsibility.",
 
   "highlights_card2_title": "Erasmus @ Vilnius Tech",
   "highlights_card2_desc": "International teamwork, quick adaptation and technical communication in English.",
