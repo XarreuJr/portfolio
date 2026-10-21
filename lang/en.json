@@ -132,18 +132,19 @@
         "role": "Cybersecurity internship · SOC",
         "period": "4 May — 4 Sep 2026",
         "datetime": "2026-05-04",
-        "summary": "Internship in Security Operations, followed by a transition to a professional SOC position in September 2026.",
+        "summary": "Curricular internship within Fujitsu Portugal’s Managed Detection and Response (MDR) service, supporting security monitoring, alert analysis and incident response, followed by a professional role in the SOC team.",
         "bullets": [],
         "tags": [
-          "Security operations",
-          "SOC workflows"
+          "MDR",
+          "SOC",
+          "Security monitoring"
         ]
       },
       {
         "company": "Boliden SOMINCOR",
         "role": "IT summer internship",
-        "period": "Summer 2025",
-        "datetime": "2025",
+        "period": "July 2025",
+        "datetime": "2025-07",
         "summary": "Practical IT experience in a demanding industrial environment, including communications support more than 1,000 metres underground.",
         "bullets": [
           "Worked with Active Directory, Group Policy and endpoint management using SCCM.",
@@ -158,6 +159,21 @@
           "PowerShell"
         ],
         "report": "./assets/somincor.pdf"
+      }
+    ],
+    "additionalLabel": "Additional experience",
+    "additional": [
+      {
+        "company": "Meu Super",
+        "role": "Store assistant",
+        "period": "Oct 2020 — Apr 2026",
+        "summary": "Over five years of customer-facing work alongside my studies, strengthening communication, responsibility and time management."
+      },
+      {
+        "company": "Magma Studio",
+        "role": "Magma ambassador",
+        "period": "Dec 2023 — Sep 2024",
+        "summary": "Connected the academic community with early-career talent initiatives, with a focus on communication and collaboration."
       }
     ]
   },
@@ -369,7 +385,9 @@
           "SciPy",
           "NumPy",
           "Matplotlib",
-          "Data analysis"
+          "Data analysis",
+          "Machine learning",
+          "Data classification"
         ]
       }
     ]
@@ -378,8 +396,8 @@
     "eyebrow": "05 / EDUCATION & TRAINING",
     "title": "Learning is part\nof the practice.",
     "intro": "Formal education, international experience and completed technical learning paths.",
-    "studyLabel": "ACADEMIC BACKGROUND",
-    "trainingLabel": "COMPLETED LEARNING PATHS",
+    "studyLabel": "EDUCATION, MOBILITY & AFFILIATION",
+    "trainingLabel": "TECHNICAL TRAINING",
     "items": [
       {
         "institution": "Instituto Politécnico de Beja · IPBeja",
@@ -398,9 +416,16 @@
       {
         "institution": "Vilnius Tech · Lithuania",
         "title": "Erasmus+ academic exchange",
-        "period": "International academic experience",
+        "period": "Feb — Jun 2025",
         "status": "Academic mobility",
         "description": "International teamwork, adaptability and technical communication in English."
+      },
+      {
+        "institution": "Technische Hochschule Deggendorf · Germany",
+        "title": "Blended Intensive Programme · HEROESGoes2Nature",
+        "period": "Mar — Apr 2026",
+        "status": "International mobility",
+        "description": "An international programme covering sustainable tourism, design thinking and data-driven innovation."
       },
       {
         "institution": "CISTI 2026",
@@ -408,6 +433,13 @@
         "period": "Dec 2025 — Jun 2026",
         "status": "Scientific communication",
         "description": "Preparation and online presentation of a scientific article, co-authored with Denis Cicau."
+      },
+      {
+        "institution": "Ordem dos Engenheiros",
+        "title": "Student member",
+        "period": "Jul 2026 — present",
+        "status": "Professional association · Student category",
+        "description": "Student membership supporting academic and professional development in Computer Engineering and Cybersecurity."
       }
     ],
     "certificates": [
@@ -424,6 +456,34 @@
         "date": "Jun 2026",
         "datetime": "2026-06",
         "id": "THM-TEX3ZGHPIQ"
+      },
+      {
+        "name": "Java basics · 40 hours",
+        "issuer": null,
+        "date": null,
+        "datetime": null,
+        "id": null
+      },
+      {
+        "name": "HTML5 & CSS3 · Module 1 of 5 · 40 hours",
+        "issuer": null,
+        "date": null,
+        "datetime": null,
+        "id": null
+      },
+      {
+        "name": "Introduction to Generative Artificial Intelligence",
+        "issuer": null,
+        "date": null,
+        "datetime": null,
+        "id": null
+      },
+      {
+        "name": "Introduction to Python for data processing and visualisation",
+        "issuer": null,
+        "date": null,
+        "datetime": null,
+        "id": null
       }
     ]
   },

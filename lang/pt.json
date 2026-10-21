@@ -132,18 +132,19 @@
         "role": "Estágio em cibersegurança · SOC",
         "period": "4 mai. — 4 set. 2026",
         "datetime": "2026-05-04",
-        "summary": "Estágio em operações de segurança, seguido da integração profissional numa posição de SOC em setembro de 2026.",
+        "summary": "Estágio curricular integrado no serviço de Managed Detection and Response (MDR) da Fujitsu Portugal, com acompanhamento da monitorização, análise de alertas e resposta a incidentes. Seguiu-se a integração profissional na equipa de SOC.",
         "bullets": [],
         "tags": [
-          "Operações de segurança",
-          "Processos de SOC"
+          "MDR",
+          "SOC",
+          "Monitorização de segurança"
         ]
       },
       {
         "company": "Boliden SOMINCOR",
         "role": "Estágio de verão em TI",
-        "period": "Verão de 2025",
-        "datetime": "2025",
+        "period": "Julho de 2025",
+        "datetime": "2025-07",
         "summary": "Experiência prática de TI num ambiente industrial exigente, incluindo apoio às comunicações a mais de 1 000 metros de profundidade.",
         "bullets": [
           "Contacto com Active Directory, Group Policy e gestão de endpoints com SCCM.",
@@ -158,6 +159,21 @@
           "PowerShell"
         ],
         "report": "./assets/somincor.pdf"
+      }
+    ],
+    "additionalLabel": "Outras experiências",
+    "additional": [
+      {
+        "company": "Meu Super",
+        "role": "Auxiliar de loja",
+        "period": "Out. 2020 — abr. 2026",
+        "summary": "Mais de cinco anos de contacto com o público, em paralelo com os estudos, desenvolvendo comunicação, responsabilidade e gestão de tempo."
+      },
+      {
+        "company": "Magma Studio",
+        "role": "Embaixador Magma",
+        "period": "Dez. 2023 — set. 2024",
+        "summary": "Ligação entre a comunidade académica e iniciativas de talento para jovens em início de carreira, com foco na comunicação e colaboração."
       }
     ]
   },
@@ -369,7 +385,9 @@
           "SciPy",
           "NumPy",
           "Matplotlib",
-          "Análise de dados"
+          "Análise de dados",
+          "Aprendizagem automática",
+          "Classificação de dados"
         ]
       }
     ]
@@ -378,8 +396,8 @@
     "eyebrow": "05 / FORMAÇÃO",
     "title": "Aprender faz parte\nda prática.",
     "intro": "Formação académica, experiência internacional e percursos de aprendizagem técnica concluídos.",
-    "studyLabel": "PERCURSO ACADÉMICO",
-    "trainingLabel": "PERCURSOS DE APRENDIZAGEM CONCLUÍDOS",
+    "studyLabel": "FORMAÇÃO, MOBILIDADE E ASSOCIATIVISMO",
+    "trainingLabel": "FORMAÇÃO TÉCNICA",
     "items": [
       {
         "institution": "Instituto Politécnico de Beja · IPBeja",
@@ -398,9 +416,16 @@
       {
         "institution": "Vilnius Tech · Lituânia",
         "title": "Mobilidade académica Erasmus+",
-        "period": "Experiência académica internacional",
+        "period": "Fev. — jun. 2025",
         "status": "Mobilidade académica",
         "description": "Trabalho em equipa internacional, adaptação e comunicação técnica em inglês."
+      },
+      {
+        "institution": "Technische Hochschule Deggendorf · Alemanha",
+        "title": "Blended Intensive Programme · HEROESGoes2Nature",
+        "period": "Mar. — abr. 2026",
+        "status": "Mobilidade internacional",
+        "description": "Programa nas áreas de turismo sustentável, design thinking e inovação orientada por dados, em contexto internacional."
       },
       {
         "institution": "CISTI 2026",
@@ -408,6 +433,13 @@
         "period": "Dez. 2025 — jun. 2026",
         "status": "Comunicação científica",
         "description": "Elaboração e apresentação online de artigo científico, em coautoria com Denis Cicau."
+      },
+      {
+        "institution": "Ordem dos Engenheiros",
+        "title": "Membro estudante",
+        "period": "Jul. 2026 — presente",
+        "status": "Associação profissional · Categoria estudante",
+        "description": "Participação enquanto membro estudante, no âmbito do desenvolvimento académico e profissional em Engenharia Informática e Cibersegurança."
       }
     ],
     "certificates": [
@@ -424,6 +456,34 @@
         "date": "Junho de 2026",
         "datetime": "2026-06",
         "id": "THM-TEX3ZGHPIQ"
+      },
+      {
+        "name": "Java básico · 40 horas",
+        "issuer": null,
+        "date": null,
+        "datetime": null,
+        "id": null
+      },
+      {
+        "name": "HTML5 e CSS3 · Módulo 1 de 5 · 40 horas",
+        "issuer": null,
+        "date": null,
+        "datetime": null,
+        "id": null
+      },
+      {
+        "name": "Introdução à Inteligência Artificial Generativa",
+        "issuer": null,
+        "date": null,
+        "datetime": null,
+        "id": null
+      },
+      {
+        "name": "Introdução ao Python para processamento e visualização de dados",
+        "issuer": null,
+        "date": null,
+        "datetime": null,
+        "id": null
       }
     ]
   },

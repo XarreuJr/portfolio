@@ -22,7 +22,8 @@ for(const d of translations){
   if(project.id==='bigdata')assert(!/CISTI/i.test(JSON.stringify(project)),'BigData Helper must remain separate from the CISTI article');
  }
  assert(d.education.items.some(item=>item.institution==='CISTI 2026'),'Scientific presentation belongs in education');
- assert(d.education.certificates.every(c=>/^THM-/.test(c.id)),'Only supplied training credentials');
+ assert(d.education.certificates.filter(c=>c.id).every(c=>/^THM-/.test(c.id)),'Only supplied training credentials');
+ assert(!html.includes('datetime="null"')&&!html.includes('datetime=""'),'Omit unknown training dates');
  assert(!/\bTODO\b/.test(html)&&!/lorem ipsum|coming soon/i.test(html),'No placeholder content');
  console.log(`Validated ${d.locale}: sections, links, training, project filters and content accuracy constraints.`);
 }
