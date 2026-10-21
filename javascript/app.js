@@ -1,4 +1,7 @@
-import {render} from './render.js';
+// Keep modules and translations on the same release, including returning visitors.
+const rendererURL = new URL('./render.js', import.meta.url);
+rendererURL.search = new URL(import.meta.url).search;
+const {render} = await import(rendererURL.href);
 
 const root = document.getElementById('portfolio');
 const cache = new Map();
@@ -67,12 +70,16 @@ async function setLanguage(lang,fromControl=false) {
   const request=++requestId;
   try {
     if(!cache.has(lang)) {
-      const response=await fetch(new URL(`../lang/${lang}.json`,import.meta.url));
+      const translationURL=new URL(`../lang/${lang}.json`,import.meta.url);
+      translationURL.search=new URL(import.meta.url).search;
+      const response=await fetch(translationURL);
       if(!response.ok)throw new Error(`Language ${response.status}`);
       cache.set(lang,await response.json());
     }
     if(request!==requestId)return;
-    content=cache.get(lang);
+    const nextContent=cache.get(lang);
+    if(!nextContent.ui||!nextContent.projects?.categories)throw new Error('Incompatible language content');
+    content=nextContent;
     language=lang;
     const oldScroll=window.scrollY;
     const menuOpen=root.querySelector('.nav-toggle')?.getAttribute('aria-expanded')==='true';

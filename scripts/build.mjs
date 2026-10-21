@@ -1,10 +1,14 @@
 import {readFile,writeFile,mkdir,cp,rm} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
+import {createHash} from 'node:crypto';
 import {render,escapeHTML as e} from '../javascript/render.js';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 const d=JSON.parse(await readFile(path.join(root,'lang/en.json'),'utf8'));
+const releaseHash=createHash('sha256');
+for(const name of ['lang/en.json','lang/pt.json','css/portfolio.css','javascript/app.js','javascript/render.js','javascript/theme-init.js'])releaseHash.update(await readFile(path.join(root,name)));
+const release=releaseHash.digest('hex').slice(0,12);
 const profile={
  '@context':'https://schema.org','@type':'Person','name':d.fullName,'alternateName':d.name,
  'url':'https://xarreujr.github.io/portfolio/','image':'https://xarreujr.github.io/portfolio/assets/diogo.webp',
@@ -34,11 +38,11 @@ const html=`<!doctype html>
  <meta name="twitter:description" content="${e(d.metaDescription)}">
  <meta name="twitter:image" content="https://xarreujr.github.io/portfolio/assets/diogo.png">
  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
- <script src="./javascript/theme-init.js"></script>
- <link rel="stylesheet" href="./css/portfolio.css">
+ <script src="./javascript/theme-init.js?v=${release}"></script>
+ <link rel="stylesheet" href="./css/portfolio.css?v=${release}">
  <link rel="preload" as="image" href="./assets/diogo.webp" fetchpriority="high">
  <script type="application/ld+json">${JSON.stringify(profile).replaceAll('<','\\u003c')}</script>
- <script type="module" src="./javascript/app.js"></script>
+ <script type="module" src="./javascript/app.js?v=${release}"></script>
 </head>
 <body>
  <div id="portfolio">${render(d,'en')}</div>

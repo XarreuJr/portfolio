@@ -33,6 +33,7 @@ for(const file of ['javascript/app.js','javascript/render.js','javascript/theme-
 const html=await readFile(path.join(root,'dist/index.html'),'utf8');
 assert(html.startsWith('<!doctype html>'));
 assert(html.includes('application/ld+json')&&html.includes('rel="canonical"'));
+assert(/javascript\/app\.js\?v=[a-f0-9]{12}/.test(html),'Version application resources to avoid incompatible cached translations');
 for(const m of html.matchAll(/(?:href|src)="(\.\/[^"?#]+)(?:[?#][^"]*)?"/g))await access(path.join(root,'dist',m[1]));
 assert((await stat(path.join(root,'assets/diogo.webp'))).size<(await stat(path.join(root,'assets/diogo.png'))).size,'Optimised portrait smaller than original');
 console.log('JavaScript syntax, generated metadata, production asset paths and portrait size validated.');
