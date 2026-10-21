@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /portfolio/
+Sitemap: https://xarreujr.github.io/portfolio/sitemap.xml

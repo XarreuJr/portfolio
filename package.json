@@ -1,17 +1,20 @@
 {
-  "name": "devfolio",
-  "version": "1.0.0",
-  "description": "Welcome to my personal portfolio!  \r A clean, responsive, one-page website built with **HTML, SCSS, and vanilla JS**, inspired by the [DevFolio](https://github.com/AnilSeervi/DevFolio) template and customized to reflect my real academic and professional experience.",
-  "main": "index.js",
+  "name": "diogo-vidazinha-portfolio",
+  "type": "module",
+  "version": "2.0.0",
+  "description": "Bilingual cybersecurity portfolio — static HTML, CSS and JavaScript.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass style/main.scss css/main.css --style=expanded",
-    "sass:watch": "sass --watch style/main.scss css/main.css --style=expanded"
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/validate.mjs",
+    "test": "node scripts/build.mjs && node scripts/validate.mjs",
+    "lint": "node scripts/validate.mjs",
+    "preview": "node scripts/serve.mjs"
   },
   "keywords": [],
-  "author": "",
+  "author": "Diogo José Patinha Vidazinha",
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.93.3"
-  }
+  },
+  "private": true
 }

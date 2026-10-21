@@ -1,78 +1,420 @@
 {
-  "nav_about": "About",
-  "nav_skills": "Skills",
-  "nav_projects": "Projects",
-  "nav_contact": "Contact",
-  "hero_button": "Explore my background",
-  "hero_title": "Technology with purpose.<br/><span class=\"text-color-main\">Focused on cybersecurity.</span>",
-  "about_title": "About Me",
-  "about_p1": "I am a <strong>Cybersecurity Analyst at Fujitsu SOC</strong>, working on the triage, analysis and blocking of indicators of compromise (IOCs). I am also studying for a <strong>Master’s in Cybersecurity and Cybercrime</strong> in Beja.",
-  "about_p2": "My background combines <strong>systems, networking and development</strong>. At <strong>Boliden SOMINCOR</strong>, I supported IT and communications operations more than 1,000 metres underground. My Erasmus experience at <strong>Vilnius Tech</strong> strengthened my adaptability and international collaboration.",
-  "about_p3": "I have balanced work and study since the age of 16. Over five years of customer-facing experience have shaped how I communicate, learn and approach problems.",
-  "about_cv_btn": "2025 CV (PDF)",
-  "skills_title": "Skills",
-  "skills_card1_title": "Cybersecurity & Development",
-  "skills_card1_desc": "IOC triage, analysis and blocking at Fujitsu SOC. Python, Java and SQL in academic and personal projects.",
-  "skills_card2_title": "Systems & Infrastructure",
-  "skills_card2_desc": "Foundations in system administration, networking, virtualisation, backups and automation, gained during my internship at SOMINCOR.",
-  "skills_card3_title": "Personal Skills",
-  "skills_card3_desc": "Communication, teamwork, adaptability, problem-solving and continuous learning.",
-  "highlights_title": "Highlights",
-  "highlights_card1_title": "Working Student",
-  "highlights_card1_desc": "Balancing work and studies since the age of 16, developing discipline, time management, and a sense of responsibility.",
-  "highlights_card2_title": "Erasmus @ Vilnius Tech",
-  "highlights_card2_desc": "International teamwork, quick adaptation and technical communication in English.",
-  "highlights_card3_title": "5+ Years With People",
-  "highlights_card3_desc": "Customer-facing experience while studying, developing empathy, clarity and confidence in communication.",
-  "projects_title": "Projects",
-  "projects_subtitle": "From infrastructure to development: practical work, technical decisions and documentation.",
-  "projects_card1_title": "IT Internship — Boliden SOMINCOR",
-  "projects_card1_desc": "Hands-on work in system administration, cybersecurity and networking. I went down <strong>over 1,000 meters underground</strong> to support and inspect communication systems — a unique perspective on how technology supports safety and operations.",
-  "projects_card1_btn": "View Report (PDF)",
-  "projects_card2_title": "Book Exchange — JavaFX Application",
-  "projects_card2_desc": "Desktop application with <strong>authentication</strong>, <strong>full CRUD</strong> and <strong>database integration</strong>. I implemented both <strong>backend logic</strong> and the <strong>user interface</strong> using <strong>JavaFX</strong>, with a focus on <strong>clean code</strong> and consistent user experience.",
-  "projects_card3_title": "Earth–Moon System — Numerical Simulation in Python",
-  "projects_card3_desc": "Development of a numerical model of the <strong>three-body problem</strong> (Earth, Moon, spacecraft) using the <strong>Runge–Kutta 5(4)</strong> adaptive method via SciPy’s <code>solve_ivp</code>. Explored multiple initial conditions to analyse <strong>orbital sensitivity</strong> and <strong>chaotic behaviour</strong>.",
-  "projects_card3_btn": "View Report (PDF)",
-  "contact_title": "Let’s talk.",
-  "contact_text": "Cybersecurity, technology or a shared project. I am open to exchanging ideas and experiences.",
-  "contact_button": "Email me",
-  "experience_title": "My background",
-  "nav_experience": "Background",
-  "nav_certifications": "Certificates",
-  "fujitsu_role": "Cybersecurity Analyst · Fujitsu SOC",
-  "fujitsu_dates": "7 September 2026 — present",
-  "fujitsu_desc": "Triage, analysis and blocking of indicators of compromise (IOCs).",
-  "intern_title": "Internship · Fujitsu SOC",
-  "intern_dates": "4 May — 4 September 2026",
-  "master_title": "Master’s in Cybersecurity and Cybercrime",
-  "master_dates": "Beja · October 2026 — ongoing · duration: 2 years",
-  "degree_title": "Bachelor’s in Computer Engineering · IPBeja",
-  "degree_desc": "Bachelor’s nearing completion: internship presentation pending.",
-  "cert_title": "Always learning",
-  "pre_date": "TryHackMe · May 2026",
-  "cyber_date": "TryHackMe · June 2026",
-  "tag_0": "Systems administration",
-  "tag_1": "Networking",
-  "tag_2": "Teamwork",
-  "tag_3": "Communication",
-  "tag_4": "Adaptability",
-  "tag_5": "Problem solving",
-  "tag_6": "Continuous learning",
-  "tag_7": "Cybersecurity",
-  "tag_8": "Numerical methods",
-  "hero_eyebrow": "DIOGO VIDAZINHA · CYBERSECURITY ANALYST",
-  "hero_intro": "At Fujitsu SOC, I work on the triage, analysis and blocking of indicators of compromise. In Beja, I am building on that experience with a master’s in Cybersecurity and Cybercrime.",
-  "hero_contact": "Get in touch",
-  "hero_note": "SOC · Systems · Development",
-  "project_one_label": "01 / INFRASTRUCTURE",
-  "project_two_label": "02 / DEVELOPMENT",
-  "project_three_label": "03 / SCIENTIFIC COMPUTING",
-  "training_label": "TRYHACKME TRAINING",
-  "experience_label": "EXPERIENCE & EDUCATION",
-  "about_label": "ABOUT ME",
-  "skills_label": "WHAT I BRING",
-  "projects_label": "SELECTED WORK",
-  "contact_label": "CONTACT",
-  "portrait_caption": "Diogo Vidazinha"
+  "locale": "en",
+  "metaTitle": "Diogo Vidazinha — Cybersecurity Analyst & SOC Analyst",
+  "metaDescription": "Cybersecurity Analyst at Fujitsu SOC in Portugal. Security operations, Splunk, threat intelligence, software projects and ongoing postgraduate study at IPBeja.",
+  "ui": {
+    "skip": "Skip to content",
+    "menu": "Open navigation",
+    "closeMenu": "Close navigation",
+    "theme": "Switch colour theme",
+    "dark": "Dark theme",
+    "light": "Light theme",
+    "language": "Language",
+    "github": "GitHub profile",
+    "linkedin": "LinkedIn profile",
+    "cv": "Download CV · 2025",
+    "cvShort": "CV · 2025",
+    "projects": "Explore projects",
+    "contact": "Get in touch",
+    "report": "Read report",
+    "source": "Source code",
+    "demo": "Live demo",
+    "projectFilters": "Filter projects",
+    "results": "projects shown",
+    "filterAll": "All work",
+    "current": "Current role",
+    "location": "Portugal",
+    "backTop": "Back to top",
+    "footer": "Cybersecurity · Software · Portugal",
+    "previewLabel": "Technical overview",
+    "training": "Completed training",
+    "credential": "Credential ID",
+    "viewCertificate": "View certificate",
+    "themeLegend": "Colour theme",
+    "empty": "No projects in this category."
+  },
+  "nav": [
+    {
+      "id": "hero",
+      "label": "Home"
+    },
+    {
+      "id": "about",
+      "label": "About"
+    },
+    {
+      "id": "experience",
+      "label": "Experience"
+    },
+    {
+      "id": "projects",
+      "label": "Projects"
+    },
+    {
+      "id": "skills",
+      "label": "Skills"
+    },
+    {
+      "id": "education",
+      "label": "Education"
+    },
+    {
+      "id": "contact",
+      "label": "Contact"
+    }
+  ],
+  "hero": {
+    "eyebrow": "SECURITY OPERATIONS · PORTUGAL",
+    "title": "Cybersecurity Analyst.",
+    "accent": "A technical mindset. A security focus.",
+    "intro": "I’m Diogo Vidazinha, a SOC Analyst at Fujitsu. I work with security monitoring, alert investigation and threat intelligence, building on a background in Computer Engineering.",
+    "note": "Fujitsu SOC · Master’s student at IPBeja",
+    "portraitAlt": "Portrait of Diogo Vidazinha",
+    "portraitCaption": "Security operations & cyber defense",
+    "signal": [
+      "Monitor",
+      "Investigate",
+      "Respond"
+    ]
+  },
+  "about": {
+    "eyebrow": "01 / ABOUT",
+    "title": "Engineering foundations.\nA career in cyber defense.",
+    "lead": "From systems and software to the analysis of security events, I bring an engineering approach to understanding how technology works — and how to protect it.",
+    "paragraphs": [
+      "At Fujitsu’s Security Operations Center, my work includes alert triage, IOC analysis and blocking, SIEM monitoring with Splunk, and investigation of IP reputation. I value clear documentation and well-defined escalation workflows.",
+      "Alongside my SOC role, I am pursuing a Master’s in Cybersecurity Engineering and Cybercrime at IPBeja. My undergraduate studies in Computer Engineering are nearing completion, with the internship presentation still pending.",
+      "Balancing work and study since the age of 16, including more than five years of customer-facing experience, has strengthened my communication, time management and adaptability."
+    ],
+    "facts": [
+      {
+        "label": "Professional focus",
+        "value": "Security operations & threat intelligence"
+      },
+      {
+        "label": "Background",
+        "value": "Computer Engineering · IPBeja"
+      },
+      {
+        "label": "Beyond the technical",
+        "value": "International teamwork · Erasmus+ at Vilnius Tech"
+      }
+    ]
+  },
+  "experience": {
+    "eyebrow": "02 / EXPERIENCE",
+    "title": "From infrastructure\nto security operations.",
+    "intro": "Hands-on experience across enterprise security, systems and IT infrastructure.",
+    "items": [
+      {
+        "company": "Fujitsu",
+        "role": "Cybersecurity Analyst · Security Operations Center",
+        "period": "7 Sep 2026 — present",
+        "datetime": "2026-09-07",
+        "status": "Current role",
+        "summary": "Security monitoring and investigation in an enterprise SOC, with a focus on triage, threat context and clear operational handover.",
+        "bullets": [
+          "Monitor security events and investigate alerts using Splunk.",
+          "Triage, analyse and block indicators of compromise (IOCs).",
+          "Investigate threat intelligence and IP reputation with VirusTotal, AbuseIPDB and Spur.",
+          "Track incidents in Jira, document analysis and follow security escalation workflows."
+        ],
+        "tags": [
+          "Splunk",
+          "SIEM",
+          "Threat intelligence",
+          "Jira",
+          "IOCs"
+        ]
+      },
+      {
+        "company": "Fujitsu",
+        "role": "Cybersecurity internship · SOC",
+        "period": "4 May — 4 Sep 2026",
+        "datetime": "2026-05-04",
+        "summary": "Internship in Security Operations, followed by a transition to a professional SOC position in September 2026.",
+        "bullets": [],
+        "tags": [
+          "Security operations",
+          "SOC workflows"
+        ]
+      },
+      {
+        "company": "Boliden SOMINCOR",
+        "role": "IT summer internship",
+        "period": "Summer 2025",
+        "datetime": "2025",
+        "summary": "Practical IT experience in a demanding industrial environment, including communications support more than 1,000 metres underground.",
+        "bullets": [
+          "Worked with Active Directory, Group Policy and endpoint management using SCCM.",
+          "Gained hands-on experience with VMware, Veeam, networking and infrastructure support.",
+          "Used PowerShell for automation and supported day-to-day IT operations."
+        ],
+        "tags": [
+          "Active Directory",
+          "VMware",
+          "Veeam",
+          "SCCM",
+          "PowerShell"
+        ],
+        "report": "./assets/somincor.pdf"
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "03 / SELECTED WORK",
+    "title": "Ideas turned into\nworking systems.",
+    "intro": "Software, scientific computing and infrastructure work. Each project reflects a different part of my technical background.",
+    "featureLabel": "FEATURED PROJECT",
+    "challenge": "Technical focus",
+    "outcome": "What it delivers",
+    "categories": {
+      "all": "All work",
+      "software": "Software development",
+      "data": "Data & analytics",
+      "academic": "Academic work",
+      "infrastructure": "Infrastructure & automation",
+      "cybersecurity": "Cybersecurity"
+    },
+    "items": [
+      {
+        "id": "bigdata",
+        "name": "BigData Helper",
+        "category": [
+          "software",
+          "data",
+          "academic"
+        ],
+        "kind": "Decision-support application",
+        "description": "A web application that helps users choose a suitable Big Data architecture through a guided, rule-based decision process.",
+        "challenge": "Translate architecture selection criteria into a multi-step questionnaire and a rule-based recommendation flow.",
+        "outcome": "User authentication, project management, analysis history and architecture comparison in a single application.",
+        "tags": [
+          "Laravel 12",
+          "PHP",
+          "MySQL",
+          "Tailwind CSS",
+          "JavaScript"
+        ],
+        "visual": "bigdata",
+        "visualTitle": "From requirements to architecture",
+        "visualLabels": [
+          "Questionnaire",
+          "Rule engine",
+          "Architecture recommendation"
+        ],
+        "featured": true
+      },
+      {
+        "id": "book",
+        "name": "Book Exchange",
+        "category": [
+          "software",
+          "academic"
+        ],
+        "kind": "JavaFX desktop application",
+        "description": "A book-exchange application with authentication, full CRUD operations and database integration.",
+        "challenge": "Implement backend logic and a consistent desktop interface, connected to persistent data.",
+        "outcome": "An application that brings authentication, data management and a JavaFX interface together.",
+        "tags": [
+          "Java",
+          "JavaFX",
+          "JDBC / Hibernate",
+          "SQL"
+        ],
+        "visual": "books",
+        "visualTitle": "Connected application layers",
+        "visualLabels": [
+          "JavaFX interface",
+          "Application logic",
+          "Database"
+        ]
+      },
+      {
+        "id": "moon",
+        "name": "Earth–Moon Simulation",
+        "category": [
+          "data",
+          "academic"
+        ],
+        "kind": "Numerical simulation in Python",
+        "description": "A numerical model of the Earth–Moon–spacecraft three-body problem, exploring orbital sensitivity and chaotic behaviour.",
+        "challenge": "Model multiple initial conditions using SciPy’s adaptive Runge–Kutta 5(4) solver.",
+        "outcome": "Numerical analysis and visualisation of how initial conditions affect trajectories.",
+        "tags": [
+          "Python",
+          "SciPy",
+          "Matplotlib",
+          "solve_ivp"
+        ],
+        "report": "./assets/earth-moon-simulation.pdf",
+        "visual": "orbit",
+        "visualTitle": "Earth–Moon–spacecraft model",
+        "visualLabels": [
+          "Earth",
+          "Moon",
+          "Spacecraft"
+        ]
+      },
+      {
+        "id": "somincor",
+        "name": "IT in an industrial environment",
+        "category": [
+          "infrastructure"
+        ],
+        "kind": "Boliden SOMINCOR · Internship",
+        "description": "Systems, networking and communications work in a mining environment, documented in an internship report.",
+        "challenge": "Support IT infrastructure and communications in demanding operational conditions.",
+        "outcome": "Practical exposure to virtualisation, backup, endpoint management and infrastructure support.",
+        "tags": [
+          "VMware",
+          "Veeam",
+          "SCCM",
+          "PowerShell"
+        ],
+        "report": "./assets/somincor.pdf",
+        "visual": "systems",
+        "visualTitle": "Infrastructure in context",
+        "visualLabels": [
+          "Systems",
+          "Network",
+          "Operations"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "eyebrow": "04 / TOOLKIT",
+    "title": "The tools behind\nthe work.",
+    "intro": "The technologies I use across security operations, infrastructure, software and data work.",
+    "groups": [
+      {
+        "icon": "shield",
+        "name": "Cybersecurity",
+        "description": "Security monitoring, alert triage, investigation and threat context.",
+        "items": [
+          "Splunk",
+          "SIEM",
+          "SOC operations",
+          "Security monitoring",
+          "Incident triage",
+          "Threat intelligence",
+          "VirusTotal",
+          "AbuseIPDB",
+          "Spur",
+          "Jira"
+        ]
+      },
+      {
+        "icon": "server",
+        "name": "Systems & infrastructure",
+        "description": "Foundations built through practical IT and infrastructure work.",
+        "items": [
+          "Active Directory",
+          "Group Policy",
+          "VMware",
+          "Networking",
+          "PowerShell",
+          "Veeam",
+          "SCCM"
+        ]
+      },
+      {
+        "icon": "code",
+        "name": "Software development",
+        "description": "Academic and personal applications, from interface to database.",
+        "items": [
+          "Python",
+          "Java",
+          "PHP",
+          "Laravel",
+          "JavaScript",
+          "SQL",
+          "Git",
+          "GitHub"
+        ]
+      },
+      {
+        "icon": "chart",
+        "name": "Data & analytics",
+        "description": "Data-backed applications, scientific computing and visualisation.",
+        "items": [
+          "MySQL",
+          "Power BI",
+          "SciPy",
+          "NumPy",
+          "Matplotlib",
+          "Data analysis"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "eyebrow": "05 / EDUCATION & TRAINING",
+    "title": "Learning is part\nof the practice.",
+    "intro": "Formal education, international experience and completed technical learning paths.",
+    "studyLabel": "ACADEMIC BACKGROUND",
+    "trainingLabel": "COMPLETED LEARNING PATHS",
+    "items": [
+      {
+        "institution": "Instituto Politécnico de Beja · IPBeja",
+        "title": "Master’s in Cybersecurity Engineering and Cybercrime",
+        "period": "Oct 2026 — ongoing · 2 years",
+        "status": "In progress",
+        "description": "Postgraduate study alongside professional work in Security Operations."
+      },
+      {
+        "institution": "Instituto Politécnico de Beja · IPBeja",
+        "title": "Computer Engineering · Undergraduate studies",
+        "period": "Nearing completion",
+        "status": "Internship presentation pending",
+        "description": "Academic background in programming, systems, databases and numerical methods."
+      },
+      {
+        "institution": "Vilnius Tech · Lithuania",
+        "title": "Erasmus+ academic exchange",
+        "period": "International academic experience",
+        "status": "Academic mobility",
+        "description": "International teamwork, adaptability and technical communication in English."
+      },
+      {
+        "institution": "CISTI 2026",
+        "title": "Scientific article presentation",
+        "period": "2026",
+        "status": "Scientific communication",
+        "description": "Presentation of a scientific article at CISTI 2026."
+      }
+    ],
+    "certificates": [
+      {
+        "name": "Pre Security",
+        "issuer": "TryHackMe",
+        "date": "May 2026",
+        "datetime": "2026-05",
+        "id": "THM-5ENRV5MMLY"
+      },
+      {
+        "name": "Cyber Security 101",
+        "issuer": "TryHackMe",
+        "date": "Jun 2026",
+        "datetime": "2026-06",
+        "id": "THM-TEX3ZGHPIQ"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "06 / CONTACT",
+    "title": "Let’s connect.",
+    "intro": "For a conversation about cybersecurity, a technical project or professional collaboration, you can reach me here.",
+    "emailLabel": "Email",
+    "note": "Portugal · Security operations & software engineering"
+  },
+  "name": "Diogo Vidazinha",
+  "fullName": "Diogo José Patinha Vidazinha",
+  "title": "Cybersecurity Analyst | SOC Analyst",
+  "email": "vidazinhadiogo@gmail.com",
+  "github": "https://github.com/XarreuJr",
+  "linkedin": "https://www.linkedin.com/in/diogo-vidazinha",
+  "cv": "./assets/CV_Diogo_2025.pdf",
+  "portrait": "./assets/diogo.webp"
 }
