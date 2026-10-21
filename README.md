@@ -38,4 +38,4 @@ The previous reviewed version is preserved in commit `f977dbd`. Legacy DevFolio 
 
 ## Content accuracy
 
-Responsibilities and project details come from the owner's supplied information. The CISTI 2026 scientific article presentation is separate from BigData Helper. The latter's repository is private and is not shown as a public source link. No article title, DOI, demo URL or Splunk credential has been invented. TryHackMe records are completed learning paths, not labelled professional certifications. The undergraduate degree and master's are explicitly ongoing. The downloadable CV is labelled 2025.
+Responsibilities and project details come from the owner's supplied information. The CISTI 2026 scientific article presentation is separate from BigData Helper. The latter's repository is private and is not shown as a public source link. The article title, period and co-author are transcribed from the supplied image. No DOI, demo URL or Splunk credential has been invented. TryHackMe records are completed learning paths, not labelled professional certifications. The undergraduate degree and master's are explicitly ongoing. The downloadable CV is labelled 2025.

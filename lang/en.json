@@ -206,6 +206,31 @@
         "featured": true
       },
       {
+        "id": "netflix-research",
+        "name": "Using artificial intelligence to support age-group classification of Netflix content",
+        "category": [
+          "data",
+          "academic"
+        ],
+        "kind": "Scientific article · CISTI 2026",
+        "description": "Scientific work on using artificial intelligence to support age-group classification of Netflix content.",
+        "challenge": "Explore the application of artificial intelligence and machine learning to content age classification.",
+        "outcome": "Preparation and online presentation of the article at CISTI 2026, co-authored with Denis Cicau.",
+        "tags": [
+          "Artificial intelligence",
+          "Machine learning",
+          "Academic research"
+        ],
+        "highlight": "Dec 2025 — Jun 2026",
+        "visual": "research",
+        "visualTitle": "AI applied to age classification",
+        "visualLabels": [
+          "Netflix content",
+          "AI / ML",
+          "Age classification"
+        ]
+      },
+      {
         "id": "book",
         "name": "Book Exchange",
         "category": [
@@ -379,10 +404,10 @@
       },
       {
         "institution": "CISTI 2026",
-        "title": "Scientific article presentation",
-        "period": "2026",
+        "title": "Using artificial intelligence to support age-group classification of Netflix content",
+        "period": "Dec 2025 — Jun 2026",
         "status": "Scientific communication",
-        "description": "Presentation of a scientific article at CISTI 2026."
+        "description": "Preparation and online presentation of a scientific article, co-authored with Denis Cicau."
       }
     ],
     "certificates": [

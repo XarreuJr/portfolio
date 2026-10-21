@@ -19,7 +19,7 @@ for(const d of translations){
  assert.equal(d.projects.items.filter(p=>p.featured).length,1,'One featured project');
  for(const project of d.projects.items){
   assert(project.category.every(key=>d.projects.categories[key]),'Recognised filter categories');
-  assert(!/CISTI/i.test(JSON.stringify(project)),'CISTI article must remain separate from software projects');
+  if(project.id==='bigdata')assert(!/CISTI/i.test(JSON.stringify(project)),'BigData Helper must remain separate from the CISTI article');
  }
  assert(d.education.items.some(item=>item.institution==='CISTI 2026'),'Scientific presentation belongs in education');
  assert(d.education.certificates.every(c=>/^THM-/.test(c.id)),'Only supplied training credentials');

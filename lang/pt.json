@@ -206,6 +206,31 @@
         "featured": true
       },
       {
+        "id": "netflix-research",
+        "name": "Uso de inteligência artificial no apoio à classificação de grupo etário em conteúdos Netflix",
+        "category": [
+          "data",
+          "academic"
+        ],
+        "kind": "Artigo científico · CISTI 2026",
+        "description": "Trabalho científico sobre a utilização de inteligência artificial no apoio à classificação de grupos etários em conteúdos Netflix.",
+        "challenge": "Explorar a aplicação de inteligência artificial e aprendizagem automática à classificação etária de conteúdos.",
+        "outcome": "Elaboração e apresentação online do artigo na CISTI 2026, em coautoria com Denis Cicau.",
+        "tags": [
+          "Inteligência artificial",
+          "Aprendizagem automática",
+          "Investigação académica"
+        ],
+        "highlight": "Dez. 2025 — jun. 2026",
+        "visual": "research",
+        "visualTitle": "IA aplicada à classificação etária",
+        "visualLabels": [
+          "Conteúdos Netflix",
+          "IA / ML",
+          "Classificação etária"
+        ]
+      },
+      {
         "id": "book",
         "name": "Book Exchange",
         "category": [
@@ -379,10 +404,10 @@
       },
       {
         "institution": "CISTI 2026",
-        "title": "Apresentação de artigo científico",
-        "period": "2026",
+        "title": "Uso de inteligência artificial no apoio à classificação de grupo etário em conteúdos Netflix",
+        "period": "Dez. 2025 — jun. 2026",
         "status": "Comunicação científica",
-        "description": "Apresentação de um artigo científico na CISTI 2026."
+        "description": "Elaboração e apresentação online de artigo científico, em coautoria com Denis Cicau."
       }
     ],
     "certificates": [
