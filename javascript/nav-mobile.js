@@ -23,6 +23,12 @@
   };
 
   btn.addEventListener('click', ()=> open(!header.classList.contains('nav-open')));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && header.classList.contains('nav-open')) {
+      open(false);
+      btn.focus();
+    }
+  });
   backdrop?.addEventListener('click', ()=> open(false));
   links?.forEach(a => a.addEventListener('click', ()=> open(false)));
 

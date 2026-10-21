@@ -1,4 +1,5 @@
 const switchers = document.querySelectorAll(".lang-btn");
+let languageRequest = 0;
 
 switchers.forEach(btn => {
   btn.addEventListener("click", () => {
@@ -8,22 +9,32 @@ switchers.forEach(btn => {
     btn.classList.add("active");
 
     loadLanguage(lang);
-    localStorage.setItem("portfolio_lang", lang);
+    try { localStorage.setItem("portfolio_lang", lang); } catch {}
   });
 });
 
 // Carregar o idioma ao iniciar
-const savedLang = localStorage.getItem("portfolio_lang") || "pt";
+let savedLang = "pt";
+try { savedLang = localStorage.getItem("portfolio_lang") || "pt"; } catch {}
+if (!["pt", "en"].includes(savedLang)) savedLang = "pt";
 loadLanguage(savedLang);
-document.querySelector(`[data-lang="${savedLang}"]`).classList.add("active");
+switchers.forEach(button => button.classList.toggle("active", button.dataset.lang === savedLang));
 
 function loadLanguage(lang) {
+  const request = ++languageRequest;
   fetch(`./lang/${lang}.json`)
-    .then(res => res.json())
+    .then(res => { if (!res.ok) throw new Error("Language unavailable"); return res.json(); })
     .then(data => {
+      if (request !== languageRequest) return;
+      document.documentElement.lang = lang;
+      switchers.forEach(button => {
+        const active = button.dataset.lang === lang;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-pressed', String(active));
+      });
       document.querySelectorAll("[data-translate]").forEach(el => {
         const key = el.dataset.translate;
-        el.innerHTML = data[key];
+        if (typeof data[key] === "string") el.innerHTML = data[key];
       });
-    });
+    }).catch(error => console.warn("Could not load portfolio language.", error));
 }

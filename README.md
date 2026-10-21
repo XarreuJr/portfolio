@@ -1,80 +1,36 @@
-# 🌐 Diogo Vidazinha — Portfolio
+# Diogo Vidazinha — Portfolio
 
-Welcome to my personal portfolio!  
-A clean, responsive, one-page website built with **HTML, SCSS, and vanilla JS**, inspired by the [DevFolio](https://github.com/AnilSeervi/DevFolio) template and customized to reflect my real academic and professional experience.
+Professional portfolio focused on cybersecurity, SOC experience at Fujitsu, education and selected technical work. Available in Portuguese and English.
 
----
+## Preview
 
-## 🚀 Live Preview
-🔗 [**View Portfolio**](https://xarreujr.github.io/portfolio/)  
+Serve this directory with any static HTTP server, for example:
 
----
+```sh
+python -m http.server 8766 --bind 127.0.0.1
+```
 
-## 🧑‍💻 About Me
-I'm **Diogo Vidazinha**, a final-year **IT Engineering student @ IPBeja** passionate about solving real problems with **Python** and **Artificial Intelligence**.  
-I combine solid programming and cybersecurity skills with hands-on work experience and an international academic background.
+Open http://127.0.0.1:8766/ in a browser. Using an HTTP server is necessary for the language JSON files to load.
 
-- 🎓 **Erasmus Semester** @ *Vilnius Tech* (Lithuania)  
-- 💼 **Internship** @ *Boliden SOMINCOR* (Systems, Cybersecurity & Networking — 1000 m underground)  
-- 👥 5+ years in customer service — teamwork, communication & adaptability  
-- ⚙️ Currently exploring **AI & Data** for real-world impact
+## Editing
 
----
+- `index.html`: semantic content and Portuguese fallback.
+- `css/design.css`: current responsive design, typography and layout.
+- `lang/pt.json` and `lang/en.json`: translated text.
+- `javascript/lang.js`: language preference and loading.
+- `javascript/nav-mobile.js`: mobile navigation.
+- `assets/`: portrait, CV and project reports.
 
-## 🧩 Projects
+Legacy SCSS and `css/main.css` are retained from the original DevFolio version; the current page uses `css/design.css`. No build step is required.
 
-### 🔹 IT Internship — Boliden SOMINCOR
-Practical work in systems administration, cybersecurity and networking:  
-Active Directory, VMware, Veeam, SCCM and PowerShell.  
-> *I even descended 1,000+ meters underground to support IT & comms systems.*
+## Content status
 
-📄 [View Internship Certificate (PDF)](./assets/somincor-certificate.pdf)
+Dates and SOC responsibilities were supplied by the portfolio owner. The TryHackMe training certificate names and IDs were transcribed from the supplied image. Splunk credentials and a master's report are pending identification and have not been added. The linked CV is explicitly labelled as the 2025 version.
 
----
+## Hosting
 
-### 🔹 Book Exchange — JavaFX App
-Desktop application with authentication, CRUD and database integration (JDBC/Hibernate).  
-Developed full backend logic and UI with JavaFX, focusing on clean code and consistent UX.
+Existing public address: https://xarreujr.github.io/portfolio/
 
----
+Local edits do not publish automatically. Review the changes before updating the deployed branch.
 
-### 🔹 Earth–Moon System — Numerical Simulation in Python
-Numerical model of the **three-body problem** using the  
-**Runge–Kutta 5(4) adaptive step method** (`SciPy solve_ivp`).  
-Explored orbital sensitivity and chaotic behavior with different initial conditions.
-
-📄 [View Report (PDF)](./assets/earth-moon-simulation.pdf)
-
----
-
-## 🛠️ Tech Stack
-
-| Area | Technologies |
-|------|---------------|
-| Programming | Python, Java, C++, SQL |
-| Data / AI | Pandas, NumPy, SciPy, Matplotlib |
-| Systems & Security | Active Directory, VMware, Veeam, SCCM, PowerShell |
-| Tools | Git, Power BI, Visual Studio, VS Code |
-| Soft Skills | Teamwork, Communication, Problem Solving |
-
----
-
-## 📜 Certificates
-- 🎖️ [Internship Certificate — Boliden SOMINCOR](./assets/somincor-certificate.pdf)
-
----
-
-## 📫 Contact
-- ✉️ Email: [vidazinhadiogo@gmail.com](mailto:vidazinhadiogo@gmail.com)  
-- 💼 LinkedIn: [linkedin.com/in/diogo-vidazinha](https://www.linkedin.com/in/diogo-vidazinha)  
-- 🧑‍💻 GitHub: [github.com/XarreuJr](https://github.com/XarreuJr)
-
----
-
-## ⚙️ Setup (for developers)
-To run or modify locally:
-
-```bash
-git clone https://github.com/XarreuJr/portofolio.git
-cd portofolio
-npx sass --style=expanded style/main.scss css/main.css --watch
+Original portfolio based on DevFolio. See LICENSE.

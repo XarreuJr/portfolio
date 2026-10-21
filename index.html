@@ -6,27 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <!-- ===== SEO ===== -->
-  <title>Diogo Vidazinha | Eng. Informático & Developer</title>
+  <title>Diogo Vidazinha | Cybersecurity Analyst</title>
   <meta name="keywords" content="Diogo Vidazinha, diogovidazinha, Python, IA, Inteligência Artificial, Cibersegurança, Java, SQL, Power BI, IPBeja, SOMINCOR, Vilnius Tech, Erasmus"/>
-  <meta name="description" content="Portfólio de Diogo Vidazinha — Engenharia Informática, Python & IA, estágio na SOMINCOR, experiência internacional Erasmus (Vilnius Tech)."/>
+  <meta name="description" content="Diogo Vidazinha — Cybersecurity Analyst · Fujitsu SOC · Cibersegurança · Projetos"/>
   <link rel="icon" type="image/png" href="./assets/devfolio-logo.png"/>
-  <meta name="theme-color" content="#0ea5e9"/>
+  <meta name="theme-color" content="#102d32"/>
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://xarreujr.github.io/diogo-portfolio/"/>
+  <meta property="og:url" content="https://xarreujr.github.io/portfolio/"/>
   <meta property="og:title" content="Portfólio | Diogo Vidazinha"/>
-  <meta property="og:description" content="Engenharia Informática • Python & IA • Erasmus @ Vilnius Tech • Estágio @ SOMINCOR"/>
-  <meta property="og:image" content="./assets/diogo.png"/>
+  <meta property="og:description" content="Diogo Vidazinha — Cybersecurity Analyst · Fujitsu SOC · Cibersegurança · Projetos"/>
+  <meta property="og:image" content="https://xarreujr.github.io/portfolio/assets/diogo.png"/>
   <meta property="twitter:card" content="summary_large_image"/>
-  <meta property="twitter:url" content="https://xarreujr.github.io/diogo-portfolio/"/>
+  <meta property="twitter:url" content="https://xarreujr.github.io/portfolio/"/>
   <meta property="twitter:title" content="Portfólio | Diogo Vidazinha"/>
-  <meta property="twitter:description" content="Engenharia Informática • Python & IA • Erasmus @ Vilnius Tech • Estágio @ SOMINCOR"/>
-  <meta property="twitter:image" content="./assets/diogo.png"/>
+  <meta property="twitter:description" content="Diogo Vidazinha — Cybersecurity Analyst · Fujitsu SOC · Cibersegurança · Projetos"/>
+  <meta property="twitter:image" content="https://xarreujr.github.io/portfolio/assets/diogo.png"/>
 
   <!-- CSS -->
-  <link rel="preload" as="style" href="./css/main.css"/>
-  <link rel="stylesheet" href="./css/main.css?v=2">
+
+  <link rel="stylesheet" href="./css/design.css?v=3">
 
   <!-- Icons -->
   <link
@@ -36,92 +36,57 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
   <!-- Vendor scripts -->
-  <script defer src="./javascript/scrollreveal.min.js"></script>
-  <script defer src="./javascript/scrollveal.js"></script>
+
+<link rel="canonical" href="https://xarreujr.github.io/portfolio/"/>
 </head>
 
-<body>
+<body><a class="skip-link" href="#main-content">Saltar para o conteúdo / Skip to content</a>
   <!-- ================= Header (sticky) ================= -->
   <header class="site-header" role="banner">
       <nav class="site-nav" aria-label="Primary">
-        <a class="brand" href="#hero">Diogo Vidazinha</a>
+        <a class="brand" href="#hero"><span class="brand-mark" aria-hidden="true">dv.</span><span>Diogo Vidazinha</span></a>
 
-        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Open menu">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Menu">
           <span class="bar"></span><span class="bar"></span><span class="bar"></span>
         </button>
 
         <ul class="nav-links" id="primary-menu">
           <li><a href="#about"    data-nav data-translate="nav_about">Sobre mim</a></li>
-          <li><a href="#skills"   data-nav data-translate="nav_skills">Competências</a></li>
+          <li><a href="#experience" data-nav data-translate="nav_experience">Percurso</a></li><li><a href="#certifications" data-nav data-translate="nav_certifications">Certificados</a></li><li><a href="#skills"   data-nav data-translate="nav_skills">Competências</a></li>
           <li><a href="#projects" data-nav data-translate="nav_projects">Projetos</a></li>
           <li><a href="#contact"  data-nav data-translate="nav_contact">Contacto</a></li>
-          <div class="language-switcher">
+          <li class="language-switcher">
           <button class="lang-btn active" data-lang="pt">PT</button>
           <button class="lang-btn" data-lang="en">EN</button>
-        </div>
+        </li>
         </ul>
       </nav>
   </header>
   <div class="nav-backdrop" id="nav-backdrop" hidden></div>
 
 
-  <main>
+  <main id="main-content">
     <!-- ================= Hero ================= -->
-    <section id="hero">
-      <div class="container">
-        <h1 class="hero-title" data-translate="hero_title">
-          Olá, o meu nome é <span class="text-color-main name">Diogo Vidazinha</span><br/>
-          Focado <span class="text-color-main">IA</span>, sem deixar de lado tudo o que a tecnologia ainda me pode ensinar.
-        </h1>
-        <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#about" data-translate="hero_button">
-            Saber mais sobre mim
-          </a>
-        </p>
-      </div>
-      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
-        <div class="scroll-down"></div>
-      </a>
-    </section>
+    <section id="hero"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow" data-translate="hero_eyebrow">DIOGO VIDAZINHA · CYBERSECURITY ANALYST</p><h1 class="hero-title" data-translate="hero_title">Tecnologia com propósito.<br/><span class="text-color-main">Foco em cibersegurança.</span></h1><p class="hero-intro" data-translate="hero_intro">No SOC da Fujitsu, trabalho na triagem, análise e bloqueio de indicadores de compromisso. Em Beja, aprofundo este percurso com o mestrado em Cibersegurança e Cibercrime.</p><div class="hero-actions"><a class="button button-primary" href="#experience" data-translate="hero_button">Explorar o meu percurso</a><a class="button button-secondary" href="#contact" data-translate="hero_contact">Entrar em contacto</a></div><p class="hero-note" data-translate="hero_note">SOC · Sistemas · Desenvolvimento</p></div><figure class="hero-portrait"><img src="./assets/diogo.png" alt="Diogo Vidazinha" width="600" height="800" fetchpriority="high"/><figcaption><span>Diogo Vidazinha</span><span>Fujitsu SOC</span></figcaption></figure></div></section>
 
 
-    <!-- ================= About ================= -->
+    <section id="experience" class="career-section"><div class="container"><p class="eyebrow section-eyebrow" data-translate="experience_label">EXPERIÊNCIA & FORMAÇÃO</p><h2 data-translate="experience_title">O meu percurso</h2><div class="career-grid"><article class="career-card"><h3 data-translate="fujitsu_role">Cybersecurity Analyst · Fujitsu SOC</h3><p data-translate="fujitsu_dates">7 de setembro de 2026 — presente</p><p data-translate="fujitsu_desc">Triagem, análise e bloqueio de indicadores de compromisso (IOCs).</p></article><article class="career-card"><h3 data-translate="intern_title">Estágio · Fujitsu SOC</h3><p data-translate="intern_dates">4 de maio — 4 de setembro de 2026</p></article><article class="career-card"><h3 data-translate="master_title">Mestrado em Cibersegurança e Cibercrime</h3><p data-translate="master_dates">Beja · outubro de 2026 — em curso · duração: 2 anos</p></article><article class="career-card"><h3 data-translate="degree_title">Licenciatura em Engenharia Informática · IPBeja</h3><p data-translate="degree_desc">Licenciatura em fase de conclusão: falta apresentar o estágio.</p></article></div></div></section>
+<!-- ================= About ================= -->
   <section id="about">
-  <div class="container">
+  <div class="container"><p class="eyebrow section-eyebrow" data-translate="about_label">QUEM SOU</p>
     <h2 class="section-title" data-translate="about_title">Sobre mim</h2>
     <div class="row about-wrapper">
-      <div class="about-wrapper__image portrait">
-        <img class="profile-portrait" src="./assets/diogo.png" alt="Retrato de Diogo Vidazinha"/>
-      </div>
 
       <div class="about-wrapper__info">
 
-        <p class="about-wrapper__info-text" data-translate="about_p1">
-          Finalista de Engenharia Informática no <strong><a href="https://www.ipbeja.pt" target="_blank" rel="noopener">IPBeja</a></strong>, com interesse especial em
-          <strong>Inteligência Artificial</strong>. Gosto de aprender a praticar,
-          seja em projetos académicos, desafios práticos ou novas tecnologias.
-        </p>
+        <p class="about-wrapper__info-text" data-translate="about_p1">Sou <strong>Cybersecurity Analyst no SOC da Fujitsu</strong>, onde trabalho na triagem, análise e bloqueio de indicadores de compromisso (IOCs). Em paralelo, frequento o <strong>Mestrado em Cibersegurança e Cibercrime</strong>, em Beja.</p>
 
-        <p class="about-wrapper__info-text" data-translate="about_p2">
-          Realizei um <strong>estágio de verão</strong> na <strong><a href="https://www.boliden.com/operations/mines/boliden-somincor/" target="_blank" rel="noopener">Boliden SOMINCOR</a></strong>,
-          onde tive contacto com <strong>administração de sistemas</strong>, <strong>redes</strong> e <strong>desenvolvimento de software</strong>.
-          Apoiei operações tecnológicas a mais de <strong>1&nbsp;000 metros de profundidade</strong>,
-          uma experiência que me deu uma perspetiva única sobre TI em ambientes reais e exigentes. <br><br>
+        <p class="about-wrapper__info-text" data-translate="about_p2">O meu percurso combina <strong>sistemas, redes e desenvolvimento</strong>. Na <strong>Boliden SOMINCOR</strong>, apoiei operações de TI e comunicações a mais de 1 000 metros de profundidade. A experiência Erasmus na <strong>Vilnius Tech</strong> reforçou a minha adaptação e colaboração em contextos internacionais.</p>
 
-          A experiência Erasmus na <strong><a href="https://vilniustech.lt" target="_blank" rel="noopener">Vilnius Tech</a></strong>
-          reforçou a minha <strong>adaptação</strong>, <strong>comunicação</strong> e <strong>capacidade de colaborar em contextos diversos e multiculturais</strong>. <br><br>
-
-          Trago também mais de <strong>5 anos de contacto direto com o público</strong>, experiência que fortaleceu a minha empatia, comunicação e resiliência.
-        </p>
-
-        <p class="about-wrapper__info-text" data-translate="about_p3">
-          Equilibro o meu dia-a-dia com desporto, música, leitura para desenvolvimento pessoal e uma grande <strong>paixão por motas</strong>.
-        </p>
+        <p class="about-wrapper__info-text" data-translate="about_p3">Conciliar trabalho e estudos faz parte do meu percurso desde os 16 anos. Trago mais de cinco anos de contacto com o público — e a mesma vontade de aprender, comunicar e resolver problemas.</p>
 
         <span class="about-wrapper__cta">
-          <a href="./assets/CV_Diogo_2025.pdf" class="cta-btn cta-btn--resume" target="_blank" rel="noopener" data-translate="about_cv_btn">
-            Ver CV
-          </a>
+          <a href="./assets/CV_Diogo_2025.pdf" class="cta-btn cta-btn--resume" target="_blank" rel="noopener" data-translate="about_cv_btn">CV de 2025 (PDF)</a>
         </span>
 
       </div>
@@ -130,9 +95,10 @@
 </section>
 
 
+<section id="certifications" class="career-section"><div class="container"><p class="eyebrow section-eyebrow" data-translate="training_label">FORMAÇÃO TRYHACKME</p><h2 data-translate="cert_title">Aprendizagem contínua</h2><div class="career-grid"><article class="career-card"><h3>Pre Security</h3><p data-translate="pre_date">TryHackMe · maio de 2026</p><p>ID: THM-5ENRV5MMLY</p></article><article class="career-card"><h3>Cyber Security 101</h3><p data-translate="cyber_date">TryHackMe · junho de 2026</p><p>ID: THM-TEX3ZGHPIQ</p></article></div></div></section>
   <!-- ================= Skills ================= -->
 <section id="skills" class="skills">
-  <div class="container">
+  <div class="container"><p class="eyebrow section-eyebrow" data-translate="skills_label">O QUE TRAGO</p>
     <h2 class="section-title dark-blue-text" data-translate="skills_title">Competências</h2>
 
     <div class="skills-grid">
@@ -140,14 +106,12 @@
       <!-- IA & Desenvolvimento -->
       <div class="skill-card">
         <div class="skill-card__icon"><i class="fa-brands fa-python"></i></div>
-        <h3 class="skill-card__title" data-translate="skills_card1_title">IA & Desenvolvimento</h3>
-        <p class="skill-card__desc" data-translate="skills_card1_desc">
-          Python, Inteligência Artificial e desenvolvimento de aplicações académicas e pessoais.
-        </p>
+        <h3 class="skill-card__title" data-translate="skills_card1_title">Cibersegurança & Desenvolvimento</h3>
+        <p class="skill-card__desc" data-translate="skills_card1_desc">Triagem, análise e bloqueio de IOCs no SOC da Fujitsu. Python, Java e SQL em projetos académicos e pessoais.</p>
         <ul class="skill-chips">
           <li>Python</li>
-          <li>IA/ML</li>
-          <li>Data Analysis</li>
+          <li>IOCs</li>
+          <li>SOC</li>
           <li>Java</li>
           <li>SQL</li>
         </ul>
@@ -161,8 +125,8 @@
           Bases em administração de sistemas, redes, virtualização, backups e automação, adquiridas no estágio na SOMINCOR.
         </p>
         <ul class="skill-chips">
-          <li>Administração de Sistemas</li>
-          <li>Redes</li>
+          <li data-translate="tag_0">Administração de Sistemas</li>
+          <li data-translate="tag_1">Redes</li>
           <li>VMware</li>
           <li>Veeam</li>
           <li>PowerShell</li>
@@ -177,11 +141,11 @@
           Comunicação, trabalho em equipa, adaptabilidade, resolução de problemas e aprendizagem contínua.
         </p>
         <ul class="skill-chips">
-          <li>Trabalho em equipa</li>
-          <li>Comunicação</li>
-          <li>Adaptabilidade</li>
-          <li>Resolução de problemas</li>
-          <li>Aprendizagem contínua</li>
+          <li data-translate="tag_2">Trabalho em equipa</li>
+          <li data-translate="tag_3">Comunicação</li>
+          <li data-translate="tag_4">Adaptabilidade</li>
+          <li data-translate="tag_5">Resolução de problemas</li>
+          <li data-translate="tag_6">Aprendizagem contínua</li>
         </ul>
       </div>
 
@@ -203,11 +167,9 @@
   <div class="highlight-card__icon">
     <i class="fa-solid fa-briefcase"></i> <!-- podes manter o ícone antigo se preferires -->
   </div>
-  <h3 class="highlight-card__title">
-    Trabalhador-estudante
-  </h3>
-  <p class="highlight-card__desc">
-    A conciliar trabalho desde os 16 anos com os estudos, 
+  <h3 class="highlight-card__title" data-translate="highlights_card1_title">Trabalhador-estudante</h3>
+  <p class="highlight-card__desc" data-translate="highlights_card1_desc">
+    A conciliar trabalho desde os 16 anos com os estudos,
     desenvolvendo disciplina, gestão de tempo e sentido de responsabilidade.
   </p>
 </div>
@@ -235,18 +197,16 @@
 </section>
     <!-- ================= Projects ================= -->
 <section id="projects">
-  <div class="container">
+  <div class="container"><p class="eyebrow section-eyebrow" data-translate="projects_label">TRABALHO SELECIONADO</p>
     <div class="project-wrapper">
       <h2 class="section-title dark-blue-text" data-translate="projects_title">
         Projetos
       </h2>
 
-      <p class="section-subtitle" data-translate="projects_subtitle">
-        Alguns dos trabalhos académicos e pessoais mais relevantes
-      </p>
+      <p class="section-subtitle" data-translate="projects_subtitle">Da infraestrutura ao desenvolvimento: trabalho prático, escolhas técnicas e documentação.</p>
 
       <!-- SOMINCOR -->
-      <article class="project-block">
+      <article class="project-block"><p class="project-label" data-translate="project_one_label">01 / INFRAESTRUTURA</p>
         <h3 class="project-title" data-translate="projects_card1_title">
           Estágio em TI — Boliden SOMINCOR
         </h3>
@@ -259,9 +219,9 @@
 
         <!-- tags podem ficar sem tradução, são quase iguais em PT/EN -->
         <ul class="project-tags">
-          <li>Administração de Sistemas</li>
-          <li>Redes</li>
-          <li>Cibersegurança</li>
+          <li data-translate="tag_0">Administração de Sistemas</li>
+          <li data-translate="tag_1">Redes</li>
+          <li data-translate="tag_7">Cibersegurança</li>
           <li>VMware</li>
           <li>Veeam</li>
           <li>PowerShell</li>
@@ -280,7 +240,7 @@
       </article>
 
       <!-- Book Exchange -->
-      <article class="project-block">
+      <article class="project-block"><p class="project-label" data-translate="project_two_label">02 / DESENVOLVIMENTO</p>
         <h3 class="project-title" data-translate="projects_card2_title">
           Book Exchange — Aplicação JavaFX
         </h3>
@@ -303,7 +263,7 @@
       </article>
 
       <!-- Earth–Moon System (Python) -->
-      <article class="project-block">
+      <article class="project-block"><p class="project-label" data-translate="project_three_label">03 / COMPUTAÇÃO CIENTÍFICA</p>
         <h3 class="project-title" data-translate="projects_card3_title">
           Sistema Terra–Lua — Simulação Numérica em Python
         </h3>
@@ -319,7 +279,7 @@
           <li>Python</li>
           <li>SciPy</li>
           <li>Runge–Kutta 5(4)</li>
-          <li>Métodos Numéricos</li>
+          <li data-translate="tag_8">Métodos Numéricos</li>
           <li>Matplotlib</li>
         </ul>
 
@@ -349,13 +309,10 @@
 
     <!-- ================= Contact ================= -->
     <section id="contact">
-      <div class="container">
-        <h2 class="section-title" data-translate="contact_title">Contacto</h2>
+      <div class="container"><p class="eyebrow section-eyebrow" data-translate="contact_label">CONTACTO</p>
+        <h2 class="section-title" data-translate="contact_title">Vamos conversar?</h2>
         <div class="contact-wrapper">
-          <p class="contact-wrapper__text" data-translate="contact_text">
-            Disponível para estágios e posições júnior em Python, IA e tecnologia. Aberto a novos desafios,
-            em regime remoto ou presencial (Évora/Beja), e motivado a aprender e evoluir.
-          </p>
+          <p class="contact-wrapper__text" data-translate="contact_text">Cibersegurança, tecnologia ou um projeto em comum. Estou disponível para trocar ideias e partilhar experiências.</p>
           <a href="mailto:vidazinhadiogo@gmail.com"
             class="cta-btn cta-btn--resume"
             data-translate="contact_button">
@@ -365,6 +322,7 @@
       </div>
     </section>
 
+</main>
   <!-- ================= Footer ================= -->
   <footer class="footer">
     <div class="container">
@@ -393,8 +351,6 @@
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 
   <!-- Your scripts -->
-  <script defer src="./javascript/vanilla-tilt.min.js"></script>
-  <script defer src="./javascript/valtilt.js"></script>
   <!-- <script defer src="./javascript/certifications.js"></script> -->
   <script defer src="./javascript/nav-scrollspy.js"></script>
   <script defer src="./javascript/nav-mobile.js"></script>
