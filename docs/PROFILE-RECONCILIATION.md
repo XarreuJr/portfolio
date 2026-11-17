@@ -16,7 +16,7 @@ Source: the profile PDF supplied by the portfolio owner. The PDF itself is not i
 ## Conflicts resolved using the owner's direct confirmation
 
 - Master's: the PDF lists September 2026, while the owner confirmed an October 2026 start. The portfolio retains October 2026 and a two-year duration.
-- Undergraduate degree: the profile lists July 2026 as an end date, while the owner confirmed that the internship presentation remains pending. The portfolio retains the unfinished status and makes no graduation claim.
+- Bachelor's degree: the owner confirmed on 17 November 2026 that the Computer Engineering degree at IPBeja was completed in November 2026. Both languages and the site metadata now reflect this completion date.
 - Fujitsu: the exact days previously confirmed by the owner are retained rather than replacing them with the PDF's month-only dates.
 
 Only professional information relevant to the portfolio is incorporated. The existing email and professional links remain the contact channels; the PDF is not substituted for the labelled 2025 CV.

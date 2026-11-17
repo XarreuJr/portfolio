@@ -1,7 +1,7 @@
 {
   "locale": "en",
   "metaTitle": "Diogo Vidazinha — Cybersecurity Analyst & SOC Analyst",
-  "metaDescription": "Cybersecurity Analyst at Fujitsu SOC in Portugal. Security operations, Splunk, threat intelligence, software projects and ongoing postgraduate study at IPBeja.",
+  "metaDescription": "SOC Analyst at Fujitsu. Bachelor's degree in Computer Engineering completed at IPBeja in November 2026; Master's in Cybersecurity Engineering and Cybercrime in progress.",
   "ui": {
     "skip": "Skip to content",
     "menu": "Open navigation",
@@ -83,7 +83,7 @@
     "lead": "From systems and software to the analysis of security events, I bring an engineering approach to understanding how technology works — and how to protect it.",
     "paragraphs": [
       "At Fujitsu’s Security Operations Center, my work includes alert triage, IOC analysis and blocking, SIEM monitoring with Splunk, and investigation of IP reputation. I value clear documentation and well-defined escalation workflows.",
-      "Alongside my SOC role, I am pursuing a Master’s in Cybersecurity Engineering and Cybercrime at IPBeja. My undergraduate studies in Computer Engineering are nearing completion, with the internship presentation still pending.",
+      "I completed my bachelor’s degree in Computer Engineering at IPBeja in November 2026. Alongside my SOC role, I am pursuing a Master’s in Cybersecurity Engineering and Cybercrime at IPBeja.",
       "Balancing work and study since the age of 16, including more than five years of customer-facing experience, has strengthened my communication, time management and adaptability."
     ],
     "facts": [
@@ -408,9 +408,9 @@
       },
       {
         "institution": "Instituto Politécnico de Beja · IPBeja",
-        "title": "Computer Engineering · Undergraduate studies",
-        "period": "Nearing completion",
-        "status": "Internship presentation pending",
+        "title": "Computer Engineering · Bachelor’s degree",
+        "period": "Completed in November 2026",
+        "status": "Degree completed",
         "description": "Academic background in programming, systems, databases and numerical methods."
       },
       {

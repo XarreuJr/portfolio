@@ -1,7 +1,7 @@
 {
   "locale": "pt",
   "metaTitle": "Diogo Vidazinha — Cybersecurity Analyst e SOC Analyst",
-  "metaDescription": "Cybersecurity Analyst no SOC da Fujitsu, em Portugal. Operações de segurança, Splunk, threat intelligence, projetos de software e mestrado em curso no IPBeja.",
+  "metaDescription": "SOC Analyst na Fujitsu. Licenciado em Engenharia Informática pelo IPBeja em novembro de 2026, com mestrado em Engenharia de Cibersegurança e Cibercrime em curso.",
   "ui": {
     "skip": "Saltar para o conteúdo",
     "menu": "Abrir navegação",
@@ -83,7 +83,7 @@
     "lead": "Dos sistemas e do software à análise de eventos de segurança, aplico uma abordagem de engenharia para compreender como funciona a tecnologia — e como protegê-la.",
     "paragraphs": [
       "No Security Operations Center da Fujitsu, trabalho na triagem de alertas, análise e bloqueio de IOCs, monitorização de SIEM com Splunk e investigação da reputação de IPs. Valorizo a documentação clara e os processos de escalamento bem definidos.",
-      "Em paralelo com o trabalho no SOC, frequento o Mestrado em Engenharia de Cibersegurança e Cibercrime no IPBeja. A licenciatura em Engenharia Informática está em fase de conclusão, faltando a apresentação do estágio.",
+      "Concluí a licenciatura em Engenharia Informática no IPBeja em novembro de 2026. Em paralelo com o trabalho no SOC, frequento o Mestrado em Engenharia de Cibersegurança e Cibercrime no IPBeja.",
       "Conciliar trabalho e estudos desde os 16 anos, com mais de cinco anos de contacto com o público, reforçou a minha comunicação, gestão de tempo e capacidade de adaptação."
     ],
     "facts": [
@@ -409,8 +409,8 @@
       {
         "institution": "Instituto Politécnico de Beja · IPBeja",
         "title": "Engenharia Informática · Licenciatura",
-        "period": "Em fase de conclusão",
-        "status": "Apresentação do estágio pendente",
+        "period": "Concluída em novembro de 2026",
+        "status": "Licenciatura concluída",
         "description": "Base académica em programação, sistemas, bases de dados e métodos numéricos."
       },
       {
